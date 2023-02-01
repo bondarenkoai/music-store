@@ -47,3 +47,72 @@
         color: white;
     }
 }
+//
+//
+//
+.notification {
+    color: aqua;
+    font-style: italic;
+    font-size: 34px;
+}
+
+.notification-error {
+    @extend .notification;
+    background-color: #ccc;
+}
+//
+//
+//
+%notification {
+    color: aqua;
+    font-style: italic;
+    font-size: 34px;
+}
+
+.notification-error {
+    @extend %notification;
+    background-color: #ccc;
+}
+//
+//
+//
+@mixin bordered($color) {
+    border: 5px solid $color;
+}
+
+p {
+    @include bordered(green);
+}
+
+div {
+    @include bordered(yellow);
+}
+//
+//
+//
+@mixin bordered($color, $type) {
+    // @mixin bordered($color, $type:solid)
+    border: 5px $type $color;
+}
+
+p {
+    @include bordered(green, solid);
+}
+
+div {
+    @include bordered(yellow, dashed);
+}
+//
+//
+//
+$icons: "facebook", "twitter", "google", "linkedin", "instagram";
+
+@each $iconName in $icons {
+    .icon-#{$iconName} {
+        background-color: teal;
+        background-image: url("../images/#{$iconName}.svg");
+    }
+}
+//
+//
+//
