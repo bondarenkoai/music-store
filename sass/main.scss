@@ -1,5 +1,5 @@
 @import "./base/normalize";
-// @import "./utils/variables";
+@import "./utils/variables";
 // @import "./utils/mixins";
 // @import "./components/page-header";
 // @import "./components/logo";
@@ -32,4 +32,5 @@ footer {
 
 .copyright {
     background-color: #252525;
+    
 }
