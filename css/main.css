@@ -241,6 +241,10 @@ summary {
   display: list-item;
 }
 
+* {
+  font-family: Work Sans, sans-serif;
+}
+
 .container {
   padding: 30px;
 }
@@ -252,4 +256,9 @@ summary {
   background-repeat: no-repeat;
   background-color: #ccc;
   color: white;
+}
+
+footer {
+  text-color: white;
+  background-color: #505050;
 }/*# sourceMappingURL=main.css.map */

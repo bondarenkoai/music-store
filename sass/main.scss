@@ -4,6 +4,10 @@
 // @import "./components/page-header";
 // @import "./components/logo";
 
+* {
+    font-family: Work Sans, sans-serif;
+}
+
 .container {
     padding: 30px;
 }
@@ -19,4 +23,13 @@
     background-color: #ccc;
 
     color: white;
+}
+
+footer {
+    color: white;
+    background-color: #505050;
+}
+
+.copyright {
+    background-color: #252525;
 }
