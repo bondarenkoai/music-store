@@ -7,6 +7,7 @@
 @import "./components/products";
 @import "./components/finds";
 @import "./components/gearheads";
+@import "./components/button";
 
 * {
     font-family: Work Sans, sans-serif;
@@ -14,6 +15,11 @@
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $bg-color;
 }
 
 .container {

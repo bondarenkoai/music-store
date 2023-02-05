@@ -242,6 +242,11 @@ summary {
   display: list-item;
 }
 
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
 .nav__logo {
   color: #ffffff;
 }
@@ -250,8 +255,21 @@ summary {
   background-color: #252525;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .site-nav__link {
   color: #fcfcfc;
+}
+
+.site-nav__link.current {
+  color: #ff753a;
 }
 
 .site-nav__link:hover,
@@ -268,6 +286,11 @@ summary {
   color: #ab0433;
 }
 
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
 .hero-title {
   width: 579px;
   height: 201px;
@@ -383,12 +406,47 @@ summary {
   color: #767676;
 }
 
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  width: 125px;
+  height: 34px;
+  border-radius: 32px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  /* or 18px */
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff753a;
+}
+
 * {
   font-family: Work Sans, sans-serif;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .container {

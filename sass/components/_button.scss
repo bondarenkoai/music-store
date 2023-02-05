@@ -1,0 +1,27 @@
+
+
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    width: 125px;
+    height: 34px;    
+    border-radius: 32px;
+
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+
+    text-align: center;
+
+    color: $bg-color;
+    background-color: $btn-color;
+}

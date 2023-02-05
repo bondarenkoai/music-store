@@ -2,8 +2,20 @@
     background-color: $color-25;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+}
+
 .site-nav__link {
     color: $text-nav;
+}
+
+.site-nav__link.current {
+    color: $btn-color;
 }
 
 .site-nav__link:hover,
