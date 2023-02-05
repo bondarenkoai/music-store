@@ -4,35 +4,50 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./dist/css/main.min.css " />
         <title>Document</title>
     </head>
     <body>
+        <!-- Header -->
+        <div class="container">
+            <header class="page-header">
+                <nav class="nav">
+                    <a href="./index.html" class="nav__link">
+                        <img
+                            src="./images/logo.svg"
+                            alt="logo"
+                            class="nav__logo"
+                        />
+                    </a>
+                    <ul class="site-nav">
+                        <li><a href="" class="site-nav__link">Guitars</a></li>
+                        <li>
+                            <a href="" class="site-nav__link">Accessories</a>
+                        </li>
+                        <li><a href="" class="site-nav__link">Storage</a></li>
+                        <li><a href="" class="site-nav__link">Lessons</a></li>
+                        <li><a href="" class="site-nav__link">Repairs</a></li>
+                    </ul>
+                    <ul class="auth-nav">
+                        <li><a href="" class="auth-nav__link">buy</a></li>
+                        <li><a href="" class="auth-nav__link">acoount</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
         <main>
-            <!-- Header -->
             <div class="container header-bgimage">
-                <header>
-                    <nav>
-                        <a href="./index.html">
-                            <img src="./images/logo.svg" alt="logo" />
-                        </a>
-                        <ul>
-                            <li><a href="">Guitars</a></li>
-                            <li><a href="">Accessories</a></li>
-                            <li><a href="">Storage</a></li>
-                            <li><a href="">Lessons</a></li>
-                            <li><a href="">Repairs</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">buy</a></li>
-                            <li><a href="">acoount</a></li>
-                        </ul>
-                    </nav>
-                </header>
                 <!-- Section Hero -->
                 <section class="hero">
-                    <h1>Fullfilling dreams with strings attached</h1>
+                    <h1 class="hero-title">
+                        Fullfilling dreams with strings attached
+                    </h1>
                     <!-- Lesson call out -->
                     <article>
                         <img
@@ -50,75 +65,108 @@
                     </article>
                 </section>
             </div>
+
             <!-- New Product section -->
-            <section class="container">
-                <h2>New Products</h2>
-                <ul>
-                    <li>
-                        <a href=""
+            <section class="products container">
+                <h2 class="products-title">New Products</h2>
+                <ul class="card-set">
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"
                             ><img
                                 src="./images/guitar-1.png"
                                 alt="brand name"
                                 width="314"
                                 height="260"
                         /></a>
-                        <h3>Brand Name <span>$2,995</span></h3>
-                        <p>Product description here</p>
-                        <p><span>0</span> colors available</p>
+                        <h3 class="card-set__title">
+                            Brand Name <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
                     </li>
-                    <li>
-                        <a href=""
-                            ><img src="./images/guitar-2.png" alt="brand name"
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"
+                            ><img
+                                src="./images/guitar-2.png"
+                                alt="brand name"
+                                width="314"
+                                height="260"
                         /></a>
-                        <h3>Brand Name <span>$2,995</span></h3>
-                        <p>Product description here</p>
-                        <p><span>0</span> colors available</p>
+                        <h3 class="card-set__title">
+                            Brand Name <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
                     </li>
-                    <li>
-                        <a href=""
-                            ><img src="./images/guitar-3.png" alt="brand name"
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"
+                            ><img
+                                src="./images/guitar-3.png"
+                                alt="brand name"
+                                width="314"
+                                height="260"
                         /></a>
-                        <h3>Brand Name <span>$2,995</span></h3>
-                        <p>Product description here</p>
-                        <p><span>0</span> colors available</p>
+                        <h3 class="card-set__title">
+                            Brand Name <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
                     </li>
                 </ul>
             </section>
             <!-- Popular Finds section -->
-            <section class="container">
-                <h2>Popular Finds</h2>
-                <ul>
-                    <li>
-                        <a href=""
+            <section class="finds container">
+                <h2 class="finds-title">Popular Finds</h2>
+                <ul class="card-set">
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"
                             ><img src="./images/finds-1.png" alt="finds"
                         /></a>
-                        <h3>Brand Name <span>$2,995</span></h3>
-                        <p>Product description here</p>
-                        <p><span>0</span> colors available</p>
+                        <h3 class="card-set__title">
+                            Brand Name <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
                     </li>
-                    <li>
-                        <a href=""
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"
                             ><img src="./images/finds-2.png" alt="finds"
                         /></a>
-                        <h3>Brand Name <span>$2,995</span></h3>
-                        <p>Product description here</p>
-                        <p><span>0</span> colors available</p>
+                        <h3 class="card-set__title">
+                            Brand Name <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
                     </li>
-                    <li>
-                        <a href=""
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"
                             ><img src="./images/finds-3.png" alt="finds"
                         /></a>
-                        <h3>Brand Name <span>$2,995</span></h3>
-                        <p>Product description here</p>
-                        <p><span>0</span> colors available</p>
+                        <h3 class="card-set__title">
+                            Brand Name <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
                     </li>
                 </ul>
             </section>
             <!-- Gear Heads section -->
-            <section class="container">
+            <section class="gear container">
                 <h2>Gear Heads</h2>
-                <ul>
-                    <li>
+                <ul class="gear-set">
+                    <li class="gear-set__item">
                         <a href=""
                             ><img
                                 src="./images/gear-1.jpg"
@@ -126,8 +174,8 @@
                                 width="616"
                                 height="487"
                         /></a>
-                        <h3>Article Title</h3>
-                        <p>Article Subhead</p>
+                        <h3 class="gear-set__title">Article Title</h3>
+                        <p class="gear-set__content">Article Subhead</p>
                     </li>
                     <li>
                         <a href=""

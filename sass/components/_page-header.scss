@@ -1,3 +1,21 @@
 .page-header {
-    background-color: red;
+    background-color: $color-25;
+}
+
+.site-nav__link {
+    color: $text-nav;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+    color: $btn-color;
+}
+
+.auth-nav__link {
+    color: $bg-color;
+}
+
+.auth-nav__link:hover,
+.auth-nav__link:focus {
+    color: $red-line;
 }

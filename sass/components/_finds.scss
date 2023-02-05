@@ -1,0 +1,46 @@
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
+
+.finds-title {
+    // position: absolute;
+    // left: -0.36%;
+    // right: 0%;
+    // top: 14.29%;
+    // bottom: 0%;
+
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    /* identical to box height, or 48px */
+
+    // text-align: center;
+
+    /* #505050 */
+
+    color: $text-color;
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card-set__item {
+}
+
+.card-set__title {
+    color: $color-25;
+}
+
+.card-set__content {
+    color: $p-color;
+}
+
+.card-set__desc {
+    color: $text-color;
+}

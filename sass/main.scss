@@ -1,14 +1,23 @@
 @import "./base/normalize";
 @import "./utils/variables";
 // @import "./utils/mixins";
-// @import "./components/page-header";
-// @import "./components/logo";
+@import "./components/logo";
+@import "./components/page-header";
+@import "./components/hero";
+@import "./components/products";
+@import "./components/finds";
+@import "./components/gearheads";
 
 * {
     font-family: Work Sans, sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
 .container {
+    width: 1440px;
     padding: 30px;
 }
 
@@ -32,5 +41,4 @@ footer {
 
 .copyright {
     background-color: #252525;
-    
 }

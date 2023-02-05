@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -241,11 +242,157 @@ summary {
   display: list-item;
 }
 
+.nav__logo {
+  color: #ffffff;
+}
+
+.page-header {
+  background-color: #252525;
+}
+
+.site-nav__link {
+  color: #fcfcfc;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: #ff753a;
+}
+
+.auth-nav__link {
+  color: #ffffff;
+}
+
+.auth-nav__link:hover,
+.auth-nav__link:focus {
+  color: #ab0433;
+}
+
+.hero-title {
+  width: 579px;
+  height: 201px;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  /* or 67px */
+  letter-spacing: 0.02em;
+}
+
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
+.products-title {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  /* identical to box height, or 48px */
+  /* #505050 */
+  color: #505050;
+}
+
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.card-set__title {
+  color: #252525;
+}
+
+.card-set__content {
+  color: #767676;
+}
+
+.card-set__desc {
+  color: #505050;
+}
+
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
+.finds-title {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  /* identical to box height, or 48px */
+  /* #505050 */
+  color: #505050;
+}
+
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.card-set__title {
+  color: #252525;
+}
+
+.card-set__content {
+  color: #767676;
+}
+
+.card-set__desc {
+  color: #505050;
+}
+
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
+.gear-title {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #505050;
+}
+
+.gear-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gear-set__title {
+  color: #252525;
+}
+
+.gear-set__content {
+  color: #767676;
+}
+
 * {
   font-family: Work Sans, sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
+  width: 1440px;
   padding: 30px;
 }
 
@@ -259,6 +406,10 @@ summary {
 }
 
 footer {
-  text-color: white;
+  color: white;
   background-color: #505050;
+}
+
+.copyright {
+  background-color: #252525;
 }/*# sourceMappingURL=main.css.map */

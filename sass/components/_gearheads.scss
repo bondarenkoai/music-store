@@ -1,0 +1,31 @@
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
+
+.gear-title {
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+
+    color: $text-color;
+}
+
+.gear-set {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gear-set__item {
+}
+
+.gear-set__title {
+    color: $color-25;
+}
+
+.gear-set__content {
+    color: $p-color;
+}

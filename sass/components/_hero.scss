@@ -1,0 +1,22 @@
+.hero {
+}
+
+.hero-title {
+    width: 579px;
+    height: 201px;
+
+    color: $bg-color;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    /* or 67px */
+
+    letter-spacing: 0.02em;
+
+    // flex: none;
+    // order: 0;
+    // align-self: stretch;
+    // flex-grow: 0;
+}
