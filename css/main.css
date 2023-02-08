@@ -265,6 +265,9 @@ summary {
 }
 
 .site-nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
   color: #fcfcfc;
 }
 
@@ -291,17 +294,38 @@ summary {
 /* Типографія */
 /* Відображення */
 /* Інше */
-.hero-title {
-  width: 579px;
-  height: 201px;
-  color: #ffffff;
-  font-family: "Work Sans", sans-serif;
-  font-style: normal;
+.hero__title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 120%;
-  /* or 67px */
+  line-height: 1.2;
   letter-spacing: 0.02em;
+  color: #ffffff;
+  width: 579px;
+  height: 201px;
+}
+
+.hero__subtitle {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__content {
+  width: 616px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.hero__btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
 }
 
 /* Позиціювання */
@@ -309,13 +333,12 @@ summary {
 /* Типографія */
 /* Відображення */
 /* Інше */
-.products-title {
-  font-family: "Work Sans", sans-serif;
+.section__title {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.2;
-  /* identical to box height, or 48px */
+  text-align: center;
   /* #505050 */
   color: #505050;
 }
@@ -329,14 +352,24 @@ summary {
 }
 
 .card-set__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
   color: #252525;
 }
 
 .card-set__content {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
   color: #767676;
 }
 
 .card-set__desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
   color: #505050;
 }
 
@@ -364,32 +397,11 @@ summary {
       flex-wrap: nowrap;
 }
 
-.card-set__title {
-  color: #252525;
-}
-
-.card-set__content {
-  color: #767676;
-}
-
-.card-set__desc {
-  color: #505050;
-}
-
 /* Позиціювання */
 /* Блокова модель */
 /* Типографія */
 /* Відображення */
 /* Інше */
-.gear-title {
-  font-family: "Work Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  color: #505050;
-}
-
 .gear-set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,11 +410,33 @@ summary {
       flex-wrap: wrap;
 }
 
+.gear-set__item {
+  background-color: #252525;
+}
+
+.gsi__scdr {
+  background-color: #eaeaea;
+}
+
 .gear-set__title {
-  color: #252525;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.gst__scdr {
+  color: #202020;
 }
 
 .gear-set__content {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #c4c4c4;
+}
+
+.gsc__scdr {
   color: #767676;
 }
 
@@ -425,19 +459,17 @@ summary {
   width: 125px;
   height: 34px;
   border-radius: 32px;
-  font-family: "Work Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 130%;
-  /* or 18px */
-  text-align: center;
+  margin: 0 auto;
   color: #ffffff;
   background-color: #ff753a;
 }
 
 * {
-  font-family: Work Sans, sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
 }
 
 ul {

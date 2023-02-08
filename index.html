@@ -7,7 +7,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./dist/css/main.min.css " />
@@ -26,13 +30,21 @@
                         />
                     </a>
                     <ul class="site-nav">
-                        <li><a href="./guitars.html" class="site-nav__link">Guitars</a></li>
+                        <li>
+                            <a href="./guitars.html" class="site-nav__link"
+                                >Guitars</a
+                            >
+                        </li>
                         <li>
                             <a href="" class="site-nav__link">Accessories</a>
                         </li>
                         <li><a href="" class="site-nav__link">Storage</a></li>
                         <li><a href="" class="site-nav__link">Lessons</a></li>
-                        <li><a href="" class="site-nav__link current">Repairs</a></li>
+                        <li>
+                            <a href="" class="site-nav__link current"
+                                >Repairs</a
+                            >
+                        </li>
                     </ul>
                     <ul class="auth-nav">
                         <li><a href="" class="auth-nav__link">buy</a></li>
@@ -45,7 +57,7 @@
             <div class="container header-bgimage">
                 <!-- Section Hero -->
                 <section class="hero">
-                    <h1 class="hero-title">
+                    <h1 class="hero__title">
                         Fullfilling dreams with strings attached
                     </h1>
                     <!-- Lesson call out -->
@@ -56,14 +68,14 @@
                             width="1264"
                             height="280"
                         />
-                        <h2>FREE GUITAR LESSONS!</h2>
-                        <p>
+                        <h2 class="hero__subtitle">FREE GUITAR LESSONS!</h2>
+                        <p class="hero__content">
                             Purchase any guitar over $499.99 and recievea
                             one-hour guitar lesson free.
                         </p>
                         <a
                             href="https://www.google.com"
-                            class="button"
+                            class="hero__btn button"
                             target="_blank"
                             >LEARN MORE</a
                         >
@@ -73,7 +85,7 @@
 
             <!-- New Product section -->
             <section class="products container">
-                <h2 class="products-title">New Products</h2>
+                <h2 class="section__title">New Products</h2>
                 <ul class="card-set">
                     <li class="card-set__item">
                         <a href="" class="card-set-link"
@@ -127,7 +139,7 @@
             </section>
             <!-- Popular Finds section -->
             <section class="finds container">
-                <h2 class="finds-title">Popular Finds</h2>
+                <h2 class="section__title">Popular Finds</h2>
                 <ul class="card-set">
                     <li class="card-set__item">
                         <a href="" class="card-set-link"
@@ -169,7 +181,7 @@
             </section>
             <!-- Gear Heads section -->
             <section class="gear container">
-                <h2>Gear Heads</h2>
+                <h2 class="section__title">Gear Heads</h2>
                 <ul class="gear-set">
                     <li class="gear-set__item">
                         <a href=""
@@ -182,7 +194,9 @@
                         <h3 class="gear-set__title">Article Title</h3>
                         <p class="gear-set__content">Article Subhead</p>
                     </li>
-                    <li>
+
+                    <li></li>
+                    <li class="gear-set__item gsi__scdr">
                         <a href=""
                             ><img
                                 src="./images/gear-2.jpg"
@@ -190,10 +204,10 @@
                                 width="616"
                                 height="487"
                         /></a>
-                        <h3>Article Title</h3>
-                        <p>Article Subhead</p>
+                        <h3 class="gear-set__title gst__scdr">Article Title</h3>
+                        <p class="gear-set__content gsc__scdr">Article Subhead</p>
                     </li>
-                    <li>
+                    <li class="gear-set__item">
                         <a href=""
                             ><img
                                 src="./images/gear-3.jpg"
@@ -201,10 +215,10 @@
                                 width="400"
                                 height="480"
                         /></a>
-                        <h3>Article Title</h3>
-                        <p>Article Subhead</p>
+                    <h3 class="gear-set__title">Article Title</h3>
+                        <p class="gear-set__content">Article Subhead</p>
                     </li>
-                    <li>
+                    <li class="gear-set__item gsi__scdr">
                         <a href=""
                             ><img
                                 src="./images/gear-4.jpg"
@@ -212,10 +226,10 @@
                                 width="400"
                                 height="480"
                         /></a>
-                        <h3>Article Title</h3>
-                        <p>Article Subhead</p>
+                    <h3 class="gear-set__title gst__scdr">Article Title</h3>
+                        <p class="gear-set__content gsc__scdr">Article Subhead</p>
                     </li>
-                    <li>
+                    <li class="gear-set__item">
                         <a href=""
                             ><img
                                 src="./images/gear-5.jpg"
@@ -223,9 +237,10 @@
                                 width="400"
                                 height="480"
                         /></a>
-                        <h3>Article Title</h3>
-                        <p>Article Subhead</p>
+                    <h3 class="gear-set__title">Article Title</h3>
+                        <p class="gear-set__content">Article Subhead</p>
                     </li>
+                   
                 </ul>
             </section>
         </main>

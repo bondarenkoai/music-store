@@ -10,7 +10,14 @@
 @import "./components/button";
 
 * {
-    font-family: Work Sans, sans-serif;
+    font-family: $font-family;
+}
+
+body {
+    
+
+    background-color: $bg-color;
+
 }
 
 ul {

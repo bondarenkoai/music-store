@@ -261,13 +261,7 @@ summary {
   width: 125px;
   height: 34px;
   border-radius: 32px;
-  font-family: "Work Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 130%;
-  /* or 18px */
-  text-align: center;
+  margin: 0 auto;
   color: #ffffff;
   background-color: #ff753a;
 }
@@ -295,6 +289,9 @@ summary {
 }
 
 .site-nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
   color: #fcfcfc;
 }
 

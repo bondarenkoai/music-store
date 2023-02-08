@@ -4,21 +4,18 @@
 /* Відображення */
 /* Інше */
 
-.products-title {
+.section__title {
     // position: absolute;
     // left: -0.36%;
     // right: 0%;
     // top: 14.29%;
     // bottom: 0%;
 
-    font-family: "Work Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 1.2;
-    /* identical to box height, or 48px */
-
-    // text-align: center;
+    text-align: center;
 
     /* #505050 */
 
@@ -34,13 +31,23 @@
 }
 
 .card-set__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
     color: $color-25;
 }
 
 .card-set__content {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
     color: $p-color;
 }
 
 .card-set__desc {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
     color: $text-color;
 }

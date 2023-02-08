@@ -12,15 +12,14 @@
     width: 125px;
     height: 34px;    
     border-radius: 32px;
+    margin: 0   auto;
 
-    font-family: "Work Sans", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 130%;
-    /* or 18px */
-
-    text-align: center;
+    // font-family: "Work Sans", sans-serif;
+    // font-style: normal;
+    // font-weight: 600;
+    // font-size: 14px;
+    // line-height: 1.3;
+    // text-align: center;
 
     color: $bg-color;
     background-color: $btn-color;
