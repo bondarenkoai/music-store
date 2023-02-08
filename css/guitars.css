@@ -242,6 +242,36 @@ summary {
   display: list-item;
 }
 
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  width: 125px;
+  height: 34px;
+  border-radius: 32px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  /* or 18px */
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff753a;
+}
+
 /* Позиціювання */
 /* Блокова модель */
 /* Типографія */
@@ -291,24 +321,6 @@ summary {
 /* Типографія */
 /* Відображення */
 /* Інше */
-.hero-title {
-  width: 579px;
-  height: 201px;
-  color: #ffffff;
-  font-family: "Work Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 120%;
-  /* or 67px */
-  letter-spacing: 0.02em;
-}
-
-/* Позиціювання */
-/* Блокова модель */
-/* Типографія */
-/* Відображення */
-/* Інше */
 .products-title {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -338,102 +350,6 @@ summary {
 
 .card-set__desc {
   color: #505050;
-}
-
-/* Позиціювання */
-/* Блокова модель */
-/* Типографія */
-/* Відображення */
-/* Інше */
-.finds-title {
-  font-family: "Work Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  /* identical to box height, or 48px */
-  /* #505050 */
-  color: #505050;
-}
-
-.card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-.card-set__title {
-  color: #252525;
-}
-
-.card-set__content {
-  color: #767676;
-}
-
-.card-set__desc {
-  color: #505050;
-}
-
-/* Позиціювання */
-/* Блокова модель */
-/* Типографія */
-/* Відображення */
-/* Інше */
-.gear-title {
-  font-family: "Work Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  color: #505050;
-}
-
-.gear-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.gear-set__title {
-  color: #252525;
-}
-
-.gear-set__content {
-  color: #767676;
-}
-
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 8px 16px;
-  gap: 10px;
-  width: 125px;
-  height: 34px;
-  border-radius: 32px;
-  font-family: "Work Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 130%;
-  /* or 18px */
-  text-align: center;
-  color: #ffffff;
-  background-color: #ff753a;
 }
 
 * {
@@ -470,4 +386,4 @@ footer {
 
 .copyright {
   background-color: #252525;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=guitars.css.map */
