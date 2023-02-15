@@ -262,8 +262,23 @@ summary {
   height: 34px;
   border-radius: 32px;
   margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
   color: #ffffff;
   background-color: #ff753a;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  width: 129px;
+  height: 38px;
+  border: #252525 2px solid;
+  color: #252525;
+  background-color: #ffffff;
 }
 
 /* Позиціювання */
@@ -311,6 +326,23 @@ summary {
 .auth-nav__link:hover,
 .auth-nav__link:focus {
   color: #ab0433;
+}
+
+.footer__nav-link {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.footer__nav-link:hover,
+.footer__nav-link:focus {
+  color: #ff753a;
+}
+
+.foooter__copyright {
+  font-family: "Montserrat";
+  font-size: 12.8px;
+  line-height: 1.4;
 }
 
 /* Позиціювання */

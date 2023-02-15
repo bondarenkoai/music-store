@@ -8,16 +8,14 @@
 @import "./components/finds";
 @import "./components/gearheads";
 @import "./components/button";
+@import "./components/footer";
 
 * {
     font-family: $font-family;
 }
 
 body {
-    
-
     background-color: $bg-color;
-
 }
 
 ul {
@@ -31,7 +29,7 @@ a {
 
 .container {
     width: 1440px;
-    padding: 30px;
+    padding: 15px;
 }
 
 .header-bgimage {
