@@ -1,69 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./dist/css/guitars.min.css " />
-        <title>Central Music</title>
-    </head>
-    <body>
-        <!-- Header -->
-        <div class="container">
-            <header class="page-header">
-                <nav class="nav">
-                    <a href="./index.html" class="nav__link">
-                        <img
-                            src="./images/logo.svg"
-                            alt="logo"
-                            class="nav__logo"
-                        />
-                    </a>
-                    <ul class="site-nav">
-                        <li>
-                            <a href="./guitars.html" class="site-nav__link"
-                                >Guitars</a
-                            >
-                        </li>
-                        <li>
-                            <a href="" class="site-nav__link">Accessories</a>
-                        </li>
-                        <li><a href="" class="site-nav__link">Storage</a></li>
-                        <li><a href="" class="site-nav__link">Lessons</a></li>
-                        <li>
-                            <a href="" class="site-nav__link current"
-                                >Repairs</a
-                            >
-                        </li>
-                    </ul>
-                    <ul class="auth-nav">
-                        <li><a href="" class="auth-nav__link">buy</a></li>
-                        <li><a href="" class="auth-nav__link">acoount</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        <main>
-          
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./dist/css/guitars.min.css " />
+    <title>Central Music</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container">
+        <header class="page-header">
+            <nav class="nav">
+                <a href="./index.html" class="nav__link">
+                    <img src="./images/logo.svg" alt="logo" class="nav__logo" />
+                </a>
+                <ul class="site-nav">
+                    <li>
+                        <a href="./guitars.html" class="site-nav__link">Guitars</a>
+                    </li>
+                    <li>
+                        <a href="" class="site-nav__link">Accessories</a>
+                    </li>
+                    <li><a href="" class="site-nav__link">Storage</a></li>
+                    <li><a href="" class="site-nav__link">Lessons</a></li>
+                    <li>
+                        <a href="" class="site-nav__link current">Repairs</a>
+                    </li>
+                </ul>
+                <ul class="auth-nav">
+                    <li><a href="" class="auth-nav__link">buy</a></li>
+                    <li><a href="" class="auth-nav__link">acoount</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+
         <main>
             <!-- New Product section -->
             <section class="products container">
-                <h2 class="products-title">New Products</h2>
+                <!-- <h2 class="products-title">New Products</h2> -->
+                <ul class="brands__list">
+                    <li class="brands__item"><button class="brands__btn" type="button">Carpathian</button></li>
+                    <li class="brands__item"><button class="brands__btn" type="button">Yamaha</button></li>
+                    <li class="brands__item"><button class="brands__btn" type="button">Maxtone</button></li>
+                    <li class="brands__item"><button class="brands__btn" type="button">Amphion</button></li>
+
+                </ul>
                 <ul class="card-set">
                     <li class="card-set__item">
-                        <a href="" class="card-set-link"
-                            ><img
-                                src="./images/guitar-1.png"
-                                alt="brand name"
-                                width="314"
-                                height="260"
-                        /></a>
+                        <a href="" class="card-set-link"><img src="./images/guitar-1.png" alt="brand name" width="314"
+                                height="260" /></a>
                         <h3 class="card-set__title">
                             Carpathian <span>$2,995</span>
                         </h3>
@@ -77,13 +72,8 @@
                         </p>
                     </li>
                     <li class="card-set__item">
-                        <a href="" class="card-set-link"
-                            ><img
-                                src="./images/guitar-1.png"
-                                alt="brand name"
-                                width="314"
-                                height="260"
-                        /></a>
+                        <a href="" class="card-set-link"><img src="./images/guitar-2.png" alt="brand name" width="314"
+                                height="260" /></a>
                         <h3 class="card-set__title">
                             Amphion <span>$2,995</span>
                         </h3>
@@ -98,13 +88,8 @@
                         </p>
                     </li>
                     <li class="card-set__item">
-                        <a href="" class="card-set-link"
-                            ><img
-                                src="./images/guitar-1.png"
-                                alt="brand name"
-                                width="314"
-                                height="260"
-                        /></a>
+                        <a href="" class="card-set-link"><img src="./images/guitar-3.png" alt="brand name" width="314"
+                                height="260" /></a>
                         <h3 class="card-set__title">
                             MAXTONE <span>$2,995</span>
                         </h3>
@@ -119,13 +104,136 @@
                         </p>
                     </li>
                     <li class="card-set__item">
-                        <a href="" class="card-set-link"
-                            ><img
-                                src="./images/guitar-1.png"
-                                alt="brand name"
-                                width="314"
-                                height="260"
-                        /></a>
+                        <a href="" class="card-set-link"><img src="./images/guitar-2.png" alt="brand name" width="314"
+                                height="260" /></a>
+                        <h3 class="card-set__title">
+                            Yamaha <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                        <p>
+                            Yamaha Pro Audio, Inc. is a division of Yamaha
+                            Corporation that offers a complete line of
+                            entry-level professional audio products for live
+                            sound and sound reinforcement
+                        </p>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"><img src="./images/guitar-1.png" alt="brand name" width="314"
+                                height="260" /></a>
+                        <h3 class="card-set__title">
+                            Carpathian <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                        <p>
+                            Carpathian is a Ukrainian brand that produces
+                            acoustic guitars, ukuleles, and guitar equipment
+                        </p>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"><img src="./images/guitar-2.png" alt="brand name" width="314"
+                                height="260" /></a>
+                        <h3 class="card-set__title">
+                            Amphion <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                        <p>
+                            Amphion Loudspeakers was founded in 1998. It
+                            develops and creates acoustic systems characterized
+                            by the most reliable and accurate sound.
+                        </p>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"><img src="./images/guitar-3.png" alt="brand name" width="314"
+                                height="260" /></a>
+                        <h3 class="card-set__title">
+                            MAXTONE <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                        <p>
+                            Founded in 1970, the Taiwanese company MAXTONE is
+                            currently one of the strongest and most competitive
+                            producers of musical products.
+                        </p>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"><img src="./images/guitar-2.png" alt="brand name" width="314"
+                                height="260" /></a>
+                        <h3 class="card-set__title">
+                            Yamaha <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                        <p>
+                            Yamaha Pro Audio, Inc. is a division of Yamaha
+                            Corporation that offers a complete line of
+                            entry-level professional audio products for live
+                            sound and sound reinforcement
+                        </p>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"><img src="./images/guitar-1.png" alt="brand name" width="314"
+                                height="260" /></a>
+                        <h3 class="card-set__title">
+                            Carpathian <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                        <p>
+                            Carpathian is a Ukrainian brand that produces
+                            acoustic guitars, ukuleles, and guitar equipment
+                        </p>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"><img src="./images/guitar-2.png" alt="brand name" width="314"
+                                height="260" /></a>
+                        <h3 class="card-set__title">
+                            Amphion <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                        <p>
+                            Amphion Loudspeakers was founded in 1998. It
+                            develops and creates acoustic systems characterized
+                            by the most reliable and accurate sound.
+                        </p>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"><img src="./images/guitar-3.png" alt="brand name" width="314"
+                                height="260" /></a>
+                        <h3 class="card-set__title">
+                            MAXTONE <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                        <p>
+                            Founded in 1970, the Taiwanese company MAXTONE is
+                            currently one of the strongest and most competitive
+                            producers of musical products.
+                        </p>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set-link"><img src="./images/guitar-2.png" alt="brand name" width="314"
+                                height="260" /></a>
                         <h3 class="card-set__title">
                             Yamaha <span>$2,995</span>
                         </h3>
@@ -142,9 +250,37 @@
                     </li>
                 </ul>
             </section>
-            <!-- Popular Finds section -->
+
+            <section class="help">
+                <h2 class="help__title">You need help? </h2>
+                <p class="help__text">You can find answers to frequently asked questions in our FAQ.
+                </p>
+                <a href="" class="more__link">Learn more...</a>
+
+
+                <ul>
+                    <li><a href=""><img src="/images/guitars.html/help-1.svg" alt="">
+                            <p class="help__text">Please let us know!! We offer personal service through our experienced
+                                & knowledgeable employees.</p>
+                        </a></li>
+                    <li><a href=""><img src="/images/guitars.html/help-2.svg" alt="">
+                            <p class="help__text">You get friendly & honest product advice about vintage and new gear
+                                and everything in-between.</p>
+                        </a></li>
+                    <li><a href=""><img src="/images/guitars.html/help-3.svg" alt="">
+                            <p class="help__text">Visit our stores, give us a call or send us a message.</p>
+                        </a></li>
+                </ul>
+                <div class="heplp__form">
+                    <form action="">
+                        <img src="./images/guitars.html/search-1.svg" alt="">
+                        <input type="text" placeholder="Ask a question...">
+                        <button type="submit" class="button"><span class="btn__icon"></span> Search</button>
+                    </form>
+                </div>
+            </section>
         </main>
-         <!-- Прибрати нав -->
+        <!-- Прибрати нав -->
         <footer class="footer nav container">
             <ul class="footer__nav">
                 <li>
@@ -183,5 +319,6 @@
                 <p class="foooter__copyright">&copy;2023 Music Store</p>
             </div>
         </footer>
-    </body>
+</body>
+
 </html>
