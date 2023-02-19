@@ -22,9 +22,29 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 56px;
+}
+
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.auth-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 56px;
 }
 
 .site-nav__link {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.3;
@@ -38,6 +58,14 @@
 .site-nav__link:hover,
 .site-nav__link:focus {
   color: #ff753a;
+}
+
+.auth-nav__item {
+  margin-right: 8px;
+}
+
+.auth-nav__item:last-child {
+  margin-right: 46px;
 }
 
 .auth-nav__link {
@@ -54,9 +82,12 @@
 /* Типографія */
 /* Відображення */
 /* Інше */
+.hero {
+  padding-top: 178px;
+  padding-bottom: 372px;
+}
+
 .hero__title {
-  margin-top: 178px;
-  margin-bottom: 178px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.2;
@@ -96,6 +127,7 @@
 /* Відображення */
 /* Інше */
 .section__title {
+  margin-bottom: 14px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -113,7 +145,22 @@
       flex-wrap: nowrap;
 }
 
+.card-set__item {
+  width: 400px;
+  height: 417px;
+  padding-right: 24px;
+  padding-left: 24px;
+  outline: 2px solid #252525;
+  border-radius: 10px;
+}
+
+.card-set__item:not(:last-child) {
+  margin-right: 32px;
+}
+
 .card-set__title {
+  margin-bottom: 0;
+  margin-top: 16px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.3;
@@ -121,6 +168,9 @@
 }
 
 .card-set__content {
+  margin-top: 6px;
+  margin-bottom: 0px;
+  height: 42px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.3;
@@ -128,6 +178,8 @@
 }
 
 .card-set__desc {
+  margin-top: 8px;
+  margin-bottom: 26px;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -146,7 +198,7 @@
 
 .finds-title {
   /* #505050 */
-  color: #505050;
+  margin-bottom: 42px;
 }
 
 .card-set {
@@ -162,6 +214,10 @@
 /* Типографія */
 /* Відображення */
 /* Інше */
+.gear__title {
+  margin-bottom: 48px;
+}
+
 .gear-set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,13 +228,25 @@
 
 .gear-set__item {
   background-color: #252525;
+  outline: 2px solid red;
+  border-radius: 10px;
+}
+
+.gear-set__item:not(:last-child) {
+  margin-right: 32px;
 }
 
 .gsi__scdr {
   background-color: #eaeaea;
 }
 
+.gear-set__content {
+  padding: 32px;
+}
+
 .gear-set__title {
+  margin: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.3;
@@ -189,7 +257,8 @@
   color: #202020;
 }
 
-.gear-set__content {
+.gear-set__text {
+  margin: 0;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.3;
@@ -223,7 +292,14 @@
   border-color: #ff753a;
 }
 
+.footer {
+  padding-top: 69px;
+  padding-bottom: 43px;
+}
+
 .footer__nav-link {
+  margin: 0;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.3;
   color: #ffffff;
@@ -259,6 +335,11 @@ a {
   color: #ffffff;
 }
 
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1300px;
   padding-left: 18px;
@@ -272,6 +353,11 @@ a {
   background-repeat: no-repeat;
   background-color: #ccc;
   color: white;
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 88px;
 }
 
 footer {

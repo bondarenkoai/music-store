@@ -5,11 +5,13 @@
 /* Інше */
 
 .hero {
+    padding-top: 178px;
+    padding-bottom: 372px;
 }
 
 .hero__title {
-    margin-top: 178px;
-    margin-bottom: 178px;
+    // margin-top: 178px;
+    // margin-bottom: 178px;
 
     font-weight: 700;
     font-size: 56px;
@@ -26,22 +28,21 @@
     width: 1200px;
     height: 280px;
 
-    background-image: url(/images/article-lesson.png) ;
+    background-image: url(/images/article-lesson.png);
     background-repeat: no-repeat;
-    
 }
 
 .hero__subtitle {
     margin: 0;
     padding-top: 50px;
-    
+
     font-weight: 700;
     font-size: 46px;
     line-height: 1.2;
     color: $bg-color;
 }
 
-.hero__content {    
+.hero__content {
     // width: 616px;
     // height: 72px;
     margin-bottom: 16px;
@@ -52,5 +53,4 @@
 }
 
 .hero__btn {
-   
 }

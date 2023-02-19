@@ -29,6 +29,11 @@ a {
     color: $bg-color;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 1300px;
     padding-left: 18px;
@@ -47,6 +52,11 @@ a {
     background-color: #ccc;
 
     color: white;
+}
+
+section {
+    padding-top: 96px;
+    padding-bottom: 88px;
 }
 
 footer {
