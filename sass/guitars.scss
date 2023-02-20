@@ -5,17 +5,25 @@
 @import "./components/logo";
 @import "./components/page-header";
 @import "./components/footer";
+@import "./components/";
+
 
 @import "./components/guitars-page/guitars-nav";
 @import "./components/guitars-page/guitars-products";
 @import "./components/guitars-page/guitars-help";
 
 * {
-    font-family: Work Sans, sans-serif;
+font-family: $font-family;
+}
+
+body {
+    background-color: $bg-color;
 }
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -23,14 +31,21 @@ a {
     color: $bg-color;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
-    width: 1440px;
-    padding: 30px;
+    width: 1300px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin: 0 auto;
 }
 
 .header-bgimage {
     width: 1600px;
-    height: 1000px;
+    // height: 1000px;
     background-image: url(/images/hero-bgi.jpg);
     background-repeat: no-repeat;
     // display: flex;
@@ -39,6 +54,11 @@ a {
     background-color: #ccc;
 
     color: white;
+}
+
+section {
+    padding-top: 96px;
+    padding-bottom: 88px;
 }
 
 footer {

@@ -5,7 +5,6 @@
 /* Інше */
 
 .gear {
-  
 }
 
 .gear__title {
@@ -13,22 +12,32 @@
 }
 
 .gear-set {
-    
     display: flex;
     flex-wrap: wrap;
 }
 
 .gear-set__item {
-
-
+    // margin-right: 32px;
+    margin-bottom: 48px;
     background-color: $color-25;
 
     outline: 2px solid red;
     border-radius: 10px;
 }
 
-.gear-set__item:not(:last-child) {
+.gear-set__item:nth-last-child(-n + 3) {
+    width: calc((100% - 64px) / 3);
     margin-right: 32px;
+
+        margin-bottom: 0;
+}
+
+.gear-set__item:last-child {
+    margin-right: 0;
+}
+
+.gsi__nomargin {
+    margin-left: 32px;
 }
 
 .gsi__scdr {
@@ -40,8 +49,8 @@
 }
 
 .gear-set__title {
-margin: 0;
-margin-bottom: 4px;
+    margin: 0;
+    margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 24px;

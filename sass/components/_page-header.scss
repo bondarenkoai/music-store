@@ -3,17 +3,24 @@
 }
 
 .nav {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     padding-top: 56px;
 }
 
 .site-nav {
+    margin-left: 40px;
     display: flex;
 }
 .auth-nav {
+    margin-right: 46px;
+
+    margin-left: auto;
     display: flex;
 }
 
@@ -43,10 +50,6 @@
 
 .auth-nav__item {
     margin-right: 8px;
-}
-
-.auth-nav__item:last-child {
-    margin-right: 46px;
 }
 
 .auth-nav__link {
