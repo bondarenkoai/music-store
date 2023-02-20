@@ -1,71 +1,15 @@
-@import "./base/normalize";
+// @import "./base/normalize";
 @import "./utils/variables";
 // @import "./utils/mixins";
 @import "./components/button";
 @import "./components/logo";
 @import "./components/page-header";
 @import "./components/footer";
-@import "./components/";
+
+@import "./base/general";
 
 
 @import "./components/guitars-page/guitars-nav";
 @import "./components/guitars-page/guitars-products";
 @import "./components/guitars-page/guitars-help";
 
-* {
-font-family: $font-family;
-}
-
-body {
-    background-color: $bg-color;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: $bg-color;
-}
-
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 1300px;
-    padding-left: 18px;
-    padding-right: 18px;
-    margin: 0 auto;
-}
-
-.header-bgimage {
-    width: 1600px;
-    // height: 1000px;
-    background-image: url(/images/hero-bgi.jpg);
-    background-repeat: no-repeat;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    background-color: #ccc;
-
-    color: white;
-}
-
-section {
-    padding-top: 96px;
-    padding-bottom: 88px;
-}
-
-footer {
-    color: white;
-    background-color: #505050;
-}
-
-.copyright {
-    background-color: #252525;
-}

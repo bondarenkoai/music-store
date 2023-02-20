@@ -10,6 +10,7 @@
 
 .page-header {
   background-color: #252525;
+  padding-top: 56px;
 }
 
 .nav {
@@ -19,7 +20,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 56px;
 }
 
 .site-nav {
@@ -115,6 +115,10 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 1.5;
+}
+
+.hero__btn {
+  width: 129px;
 }
 
 /* Позиціювання */
@@ -277,6 +281,15 @@
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 8px 16px;
   min-width: 125px;
   height: 34px;
@@ -378,7 +391,10 @@ a {
   color: #ffffff;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }

@@ -16,8 +16,10 @@
 
 <body>
     <!-- Header -->
-    <header class="page-header">
-    
+
+    <!-- Прибрати контейнер із класів, то було для картинки -->
+    <header class="page-header guitars-header container">
+
         <nav class="nav container">
             <a href="./index.html" class="nav__link">
                 <img src="./images/logo.svg" alt="logo" class="nav__logo" />
@@ -38,11 +40,12 @@
             <ul class="auth-nav">
                 <li class="auth-nav__item"><a href="" class="auth-nav__link"><img src="./images/nav-buy.png" alt=""></a>
                 </li>
-                <li class="auth-nav__item"><a href="" class="auth-nav__link"><img src="./images/nav-account.png" alt=""></a>
+                <li class="auth-nav__item"><a href="" class="auth-nav__link"><img src="./images/nav-account.png"
+                            alt=""></a>
                 </li>
             </ul>
         </nav>
-    
+
     </header>
     </div>
     <main>
@@ -52,7 +55,7 @@
             <section class="products container">
                 <!-- <h2 class="products-title">New Products</h2> -->
                 <ul class="brands__list">
-                    <li class="brands__item"><button class="brands__btn" type="button">Carpathian</button></li>
+                    <li class="brands__item"><button class="button" type="button">Carpathian</button></li>
                     <li class="brands__item"><button class="brands__btn" type="button">Yamaha</button></li>
                     <li class="brands__item"><button class="brands__btn" type="button">Maxtone</button></li>
                     <li class="brands__item"><button class="brands__btn" type="button">Amphion</button></li>
@@ -254,72 +257,85 @@
                 </ul>
             </section>
 
-            <section class="help">
-                <h2 class="help__title">You need help? </h2>
-                <p class="help__text">You can find answers to frequently asked questions in our FAQ.
-                </p>
-                <a href="" class="more__link">Learn more...</a>
+            <!-- Section help -->
 
-
-                <ul>
-                    <li><a href=""><img src="/images/guitars.html/help-1.svg" alt="">
-                            <p class="help__text">Please let us know!! We offer personal service through our experienced
-                                & knowledgeable employees.</p>
-                        </a></li>
-                    <li><a href=""><img src="/images/guitars.html/help-2.svg" alt="">
-                            <p class="help__text">You get friendly & honest product advice about vintage and new gear
-                                and everything in-between.</p>
-                        </a></li>
-                    <li><a href=""><img src="/images/guitars.html/help-3.svg" alt="">
-                            <p class="help__text">Visit our stores, give us a call or send us a message.</p>
-                        </a></li>
-                </ul>
-                <div class="heplp__form">
-                    <form action="">
-                        <img src="./images/guitars.html/search-1.svg" alt="">
+            <section class="help container">
+                <div class="help__abb">
+                    <div>
+                        <h2 class="help__title">You need help? </h2>
+                        <p class="help__subtext">You can find answers to frequently asked questions in our FAQ.
+                        </p>
+                        <a href="" class="more__link">Learn more...</a>
+                    </div>
+                    <div class="answers">
+                        <ul class="answers__list">
+                            <li class="more__item"><a href=""><img src="/images/guitars.html/help-1.svg" alt="">
+                                    <p class="help__text">Please let us know!! We offer personal service through our
+                                        experienced
+                                        & knowledgeable employees.</p>
+                                </a></li>
+                            <li class="more__item"><a href=""><img
+                                        src="/images/guitars.html/help-2.svg" alt="">
+                                    <p class="help__text">You get friendly & honest product advice about vintage and new
+                                        gear
+                                        and everything in-between.</p>
+                                </a></li>
+                            <li class="more__item"><a href=""><img src="/images/guitars.html/help-3.svg" alt="">
+                                    <p class="help__text">Visit our stores, give us a call or send us a message.</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="div__form">
+                    <form action="" class="help__form">
+                        <img src="./images/guitars.html/search-1.svg" alt="" width="40" height="40">
                         <input type="text" placeholder="Ask a question...">
                         <button type="submit" class="button"><span class="btn__icon"></span> Search</button>
                     </form>
                 </div>
             </section>
         </main>
-        <!-- Прибрати нав -->
-        <footer class="footer nav container">
-            <ul class="footer__nav">
-                <li>
-                    <a href="" class="footer__nav-link"><b>My Account</b></a>
-                </li>
-                <li><a href="" class="footer__nav-link">Overview</a></li>
-                <li><a href="" class="footer__nav-link">Order History</a></li>
-                <li><a href="" class="footer__nav-link">Wishlist</a></li>
-                <li>
-                    <a href="" class="footer__nav-link">Account information</a>
-                </li>
-            </ul>
-            <ul class="footer__nav">
-                <li>
-                    <a href="" class="footer__nav-link"><b>Store</b></a>
-                </li>
-                <li><a href="" class="footer__nav-link">Security Notice</a></li>
-                <li>
-                    <a href="" class="footer__nav-link">Location & Hours</a>
-                </li>
-                <li><a href="" class="footer__nav-link">Rentals</a></li>
-                <li><a href="" class="footer__nav-link">Privacy Notice</a></li>
-            </ul>
-            <div>
-                <a href="./index.html">
-                    <img src="./images/logo.svg" alt="logo" />
-                </a>
-                <ul>
-                    <li><a href="" aria-label="YouTube link">You</a></li>
-                    <li><a href="" aria-label="Twitter link">Tw</a></li>
-                    <li><a href="" aria-label="Instagram link">Ins</a></li>
-                    <li><a href="" aria-label="Facebook link">FB</a></li>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="footer__nav container">
+                <ul class="footer__nav-account">
+                    <li class="footer__nav-item">
+                        <a href="" class="footer__nav-link"><b>My Account</b></a>
+                    </li>
+                    <li class="footer__nav-item"><a href="" class="footer__nav-link">Overview</a></li>
+                    <li class="footer__nav-item"><a href="" class="footer__nav-link">Order History</a></li>
+                    <li class="footer__nav-item"><a href="" class="footer__nav-link">Wishlist</a></li>
+                    <li class="footer__nav-item">
+                        <a href="" class="footer__nav-link">Account information</a>
+                    </li>
                 </ul>
+                <ul class="footer__nav-store">
+                    <li class="footer__nav-item">
+                        <a href="" class="footer__nav-link"><b>Store</b></a>
+                    </li>
+                    <li class="footer__nav-item"><a href="" class="footer__nav-link">Security Notice</a></li>
+                    <li class="footer__nav-item">
+                        <a href="" class="footer__nav-link">Location & Hours</a>
+                    </li>
+                    <li class="footer__nav-item"><a href="" class="footer__nav-link">Rentals</a></li>
+                    <li class="footer__nav-item"><a href="" class="footer__nav-link">Privacy Notice</a></li>
+                </ul>
+                <div class="foooter__contact">
+                    <a href="./index.html">
+                        <img src="./images/logo.svg" alt="logo" />
+                    </a>
+                    <ul class="foooter__contact-social">
+                        <li><a href="" aria-label="YouTube link">You</a></li>
+                        <li><a href="" aria-label="Twitter link">Tw</a></li>
+                        <li><a href="" aria-label="Instagram link">Ins</a></li>
+                        <li><a href="" aria-label="Facebook link">FB</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <p class="foooter__copyright">&copy;2023 Music Store</p>
+            <div class="foooter__copyright">
+                <p class="foooter__copyright-text container">&copy;2023 Music Store</p>
             </div>
         </footer>
 </body>
