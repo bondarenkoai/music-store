@@ -1,7 +1,6 @@
 .page-header {
     background-color: $color-25;
     padding-top: 56px;
-
 }
 
 .nav {
@@ -11,7 +10,6 @@
 
     display: flex;
     align-items: center;
-
 }
 
 .site-nav {
@@ -54,10 +52,21 @@
 }
 
 .auth-nav__link {
+    padding: 8px;
+
     color: $bg-color;
 }
 
 .auth-nav__link:hover,
 .auth-nav__link:focus {
     color: $red-line;
+}
+
+.auth-nav__icon {
+    fill: currentColor;
+}
+
+.nav-img:hover,
+.nav-img:focus {
+    fill: $red-line;
 }

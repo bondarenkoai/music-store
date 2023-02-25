@@ -65,12 +65,22 @@
 }
 
 .auth-nav__link {
+  padding: 8px;
   color: #ffffff;
 }
 
 .auth-nav__link:hover,
 .auth-nav__link:focus {
   color: #ab0433;
+}
+
+.auth-nav__icon {
+  fill: currentColor;
+}
+
+.nav-img:hover,
+.nav-img:focus {
+  fill: #ab0433;
 }
 
 /* Позиціювання */
@@ -352,11 +362,38 @@
   margin-left: auto;
 }
 
-.foooter__contact-social {
+.contact__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: auto;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-top: 20px;
+}
+
+.social__link {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__icon {
+  fill: #ffffff;
+}
+
+.social__icon:hover, .social__icon:focus {
+  fill: #ff753a;
 }
 
 .foooter__copyright {
@@ -412,12 +449,17 @@ p {
 }
 
 .header-bgimage {
-  background: url(/images/hero-bgi.jpg);
-  color: white;
+  background-color: rgba(2, 6, 11, 0.7);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(/images/hero-bgi.jpg);
+  background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(/images/hero-bgi.jpg);
   width: 100%;
   height: 808px;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
+  color: white;
 }
 
 section {
