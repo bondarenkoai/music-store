@@ -55,6 +55,11 @@
     padding: 8px;
 
     color: $bg-color;
+
+//     &:hover,
+//     :focus {
+//         color: $red-line;
+//     }
 }
 
 .auth-nav__link:hover,
@@ -64,9 +69,4 @@
 
 .auth-nav__icon {
     fill: currentColor;
-}
-
-.nav-img:hover,
-.nav-img:focus {
-    fill: $red-line;
 }

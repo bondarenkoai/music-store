@@ -78,11 +78,6 @@
   fill: currentColor;
 }
 
-.nav-img:hover,
-.nav-img:focus {
-  fill: #ab0433;
-}
-
 /* Позиціювання */
 /* Блокова модель */
 /* Типографія */
@@ -105,15 +100,21 @@
 
 .hero__article {
   text-align: center;
-  width: 1200px;
+  width: 1264px;
   height: 280px;
   background-image: url(/images/article-lesson.png);
   background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: center;
+  -webkit-box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
 
 .hero__subtitle {
   margin: 0;
   padding-top: 50px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 46px;
   line-height: 1.2;
@@ -121,6 +122,9 @@
 }
 
 .hero__content {
+  width: 550px;
+  margin: 0 auto;
+  height: 72px;
   margin-bottom: 16px;
   font-weight: 600;
   font-size: 24px;
@@ -138,6 +142,19 @@
 /* Інше */
 .section__title {
   margin-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -145,6 +162,14 @@
   text-align: center;
   /* #505050 */
   color: #505050;
+}
+
+.section__title::before {
+  content: "";
+  margin-bottom: 8px;
+  width: 80px;
+  height: 3px;
+  background-color: #ab0433;
 }
 
 .card-set {
@@ -358,6 +383,24 @@
   color: #ff753a;
 }
 
+.link__after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.link__after::before {
+  content: "";
+  margin-bottom: px;
+  width: 58px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
 .foooter__contact {
   margin-left: auto;
 }
@@ -392,7 +435,8 @@
   fill: #ffffff;
 }
 
-.social__icon:hover, .social__icon:focus {
+.social__icon:hover,
+.social__icon:focus {
   fill: #ff753a;
 }
 
@@ -463,7 +507,7 @@ p {
 }
 
 section {
-  padding-top: 96px;
+  padding-top: 88px;
   padding-bottom: 88px;
 }
 

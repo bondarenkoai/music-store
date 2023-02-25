@@ -35,6 +35,29 @@
     color: $btn-color;
 }
 
+.link__after {
+    display: flex;
+    flex-direction: column;
+
+    // &::before {
+    //     content: "";
+    //     margin-bottom: px;
+
+    //     width: 58px;
+    //     height: 3px;
+    //     background-color: $bg-color;
+    // }
+}
+
+.link__after::before {
+    content: "";
+    margin-bottom: px;
+
+    width: 58px;
+    height: 3px;
+    background-color: $bg-color;
+}
+
 .foooter__contact {
     margin-left: auto;
 }
@@ -66,11 +89,11 @@
     // justify-content: center;
 
     // color: $bg-color;
-  fill: $bg-color;
+    fill: $bg-color;
 }
 
-.social__icon:hover , .social__icon:focus {
-    
+.social__icon:hover,
+.social__icon:focus {
     fill: $btn-color;
 }
 
