@@ -115,6 +115,10 @@
     border-radius: 10px 10px 0px 0px;
 }
 
+.card-set__img:hover .card-set__actions {
+    opacity: 1;
+}
+
 .card-set__title {
     display: flex;
     justify-content: space-between;
@@ -157,7 +161,7 @@
     border-radius: 20px;
 }
 
-.card-set__overlay {
+.card-set__actions {
     position: absolute;
     display: flex;
     align-items: center;
@@ -174,4 +178,6 @@
     color: $bg-color;
     background-color: rgba($color: #4b6383, $alpha: 0.95);
     border-radius: 10px 10px 0px 0px;
+
+    opacity: 0;
 }

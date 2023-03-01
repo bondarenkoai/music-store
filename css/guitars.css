@@ -397,6 +397,10 @@ section {
   border-radius: 10px 10px 0px 0px;
 }
 
+.card-set__img:hover .card-set__actions {
+  opacity: 1;
+}
+
 .card-set__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,7 +440,7 @@ section {
   border-radius: 20px;
 }
 
-.card-set__overlay {
+.card-set__actions {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,9 +458,11 @@ section {
   color: #ffffff;
   background-color: rgba(75, 99, 131, 0.95);
   border-radius: 10px 10px 0px 0px;
+  opacity: 0;
 }
 
 .help {
+  width: 1200px;
   padding: 52px 110px;
   background-color: #ececec;
 }
@@ -484,17 +490,48 @@ section {
   color: #767676;
 }
 
-.answers {
-  width: 520px;
-  margin-left: auto;
-}
-
 .help__text {
   color: #767676;
 }
 
 .more__link {
   color: #767676;
+}
+
+.answers {
+  margin-left: auto;
+}
+
+.answers__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.answers__text {
+  width: 430px;
+  color: #767676;
+}
+
+.answers__link::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  background-image: url("../../images/guitars.html/help-1.svg");
+  background-size: contain;
+}
+
+.al__icon-2::before {
+  background-image: url("../../images/guitars.html/help-2.svg");
+}
+
+.al__icon-3::before {
+  background-image: url("../../images/guitars.html/help-3.svg");
 }
 
 .div__form {

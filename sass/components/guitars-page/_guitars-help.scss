@@ -1,4 +1,5 @@
 .help {
+    width: 1200px;
     padding: 52px 110px;
 
     background-color: #ececec;
@@ -35,20 +36,51 @@
     color: $p-color;
 }
 
-.answers {
-    width: 520px;
-    margin-left: auto;
-}
-
-.answers__list {
-}
-
 .help__text {
     color: $p-color;
 }
 
 .more__link {
     color: $p-color;
+}
+
+.answers {
+    margin-left: auto;
+}
+
+.answers__list {
+}
+
+.answers__item {
+}
+.answers__link {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.answers__text {
+    width: 430px;
+    color: $p-color;
+}
+
+.answers__link::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+
+    background-image: url("../../images/guitars.html/help-1.svg");
+    background-size: contain;
+}
+
+.al__icon-2::before {
+    background-image: url("../../images/guitars.html/help-2.svg");
+}
+
+.al__icon-3::before {
+    background-image: url("../../images/guitars.html/help-3.svg");
 }
 
 .div__form {
