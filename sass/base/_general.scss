@@ -38,6 +38,8 @@ p {
 }
 
 .header-bgimage {
+    position: absolute;
+
     // width: 1600px;
     // height: 1000px;
     background-color: rgba(2, 6, 11, 0.7);
@@ -62,6 +64,8 @@ p {
     background-position: center;
 
     color: white;
+
+    z-index: -1;
 }
 
 section {
