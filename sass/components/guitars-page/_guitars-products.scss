@@ -30,27 +30,27 @@
     margin-right: 25px;
 }
 
-.brands__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-    // gap: 10px;
+// .brands__btn {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 8px 16px;
+//     // gap: 10px;
 
-    min-width: 125px;
-    height: 34px;
-    border-radius: 32px;
-    margin: 0 auto;
+//     min-width: 125px;
+//     height: 34px;
+//     border-radius: 32px;
+//     margin: 0 auto;
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.3;
-    text-align: center;
+//     font-weight: 600;
+//     font-size: 14px;
+//     line-height: 1.3;
+//     text-align: center;
 
-    color: $bg-color;
-    background-color: $btn-color;
-    border: 3px solid transparent;
-}
+//     color: $bg-color;
+//     background-color: $btn-color;
+//     border: 3px solid transparent;
+// }
 
 .brands__btn:hover,
 .brands__btn:focus,
@@ -85,6 +85,9 @@
         (0px 12px 32px rgba(0, 0, 0, 0.05));
 
     border-radius: 10px;
+
+    overflow: hidden;
+
 }
 
 .card-set__item:nth-child(3n) {
@@ -113,10 +116,6 @@
         #d3d3d3 100%
     );
     border-radius: 10px 10px 0px 0px;
-}
-
-.card-set__img:hover .card-set__actions {
-    opacity: 1;
 }
 
 .card-set__title {
@@ -179,5 +178,13 @@
     background-color: rgba($color: #4b6383, $alpha: 0.95);
     border-radius: 10px 10px 0px 0px;
 
+    // transform: translateX(-100%);
+    transition: transform 250ms $cubic;
+
     opacity: 0;
+}
+
+.card-set__img:hover .card-set__actions {
+    // transform: translateX(0);
+    opacity: 1;
 }
