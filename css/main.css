@@ -1,4 +1,112 @@
 @charset "UTF-8";
+@-webkit-keyframes fade-left-to-right {
+  from {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left-to-right {
+  from {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-right-to-left {
+  from {
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right-to-left {
+  from {
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  4% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  8% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  12% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  16% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  20% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  24% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  4% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  8% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  12% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  16% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  20% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  24% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
 /* Позиціювання */
 /* Блокова модель */
 /* Типографія */
@@ -118,19 +226,23 @@
   color: #ffffff;
   width: 577px;
   height: 201px;
+  -webkit-animation: fade-left-to-right 2s;
+          animation: fade-left-to-right 2s;
 }
 
 .hero__article {
   text-align: center;
   width: 1264px;
-  height: 280px;
+  height: 255px;
   background-image: url(/images/article-lesson.png);
   background-repeat: no-repeat;
-  background-size: inherit;
+  background-size: initial;
   background-position: center;
   -webkit-box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  -webkit-animation: fade-right-to-left 3s cubic-bezier(0.4, 0, 0.2, 1);
+          animation: fade-right-to-left 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__subtitle {
@@ -155,7 +267,8 @@
 }
 
 .hero__btn {
-  width: 129px;
+  -webkit-animation: swing 10s ease-in-out infinite forwards;
+          animation: swing 10s ease-in-out infinite forwards;
 }
 
 .backdrop {
@@ -280,7 +393,7 @@
 /* Відображення */
 /* Інше */
 .finds {
-  background: #ECECEC;
+  background: #ececec;
 }
 
 .finds-title {
@@ -294,6 +407,18 @@
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+.card-set__img {
+  -webkit-transition: -webkit-transform linear 250ms;
+  transition: -webkit-transform linear 250ms;
+  transition: transform linear 250ms;
+  transition: transform linear 250ms, -webkit-transform linear 250ms;
+}
+
+.card-set__img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* Позиціювання */

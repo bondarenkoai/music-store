@@ -1,4 +1,112 @@
 @charset "UTF-8";
+@-webkit-keyframes fade-left-to-right {
+  from {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left-to-right {
+  from {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-right-to-left {
+  from {
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right-to-left {
+  from {
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  4% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  8% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  12% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  16% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  20% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  24% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  4% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  8% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  12% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  16% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  20% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  24% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
