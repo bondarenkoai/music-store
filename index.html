@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.min.css " />
     <title>Central Music</title>
 </head>
@@ -94,7 +95,7 @@
             <section class="products ">
                 <h2 class="section__title">New Products</h2>
                 <ul class="card-set">
-                    <li class="card-set__item">
+                    <li class="card-set__item" data-aos="fade-down">
                         <a href="" class="card-set-link"><img src="./images/guitar-1.png" alt="brand name" width="314"
                                 height="260" /></a>
                         <h3 class="card-set__title">
@@ -105,7 +106,7 @@
                         </p>
                         <p class="card-set__desc"><b>0</b> colors available</p>
                     </li>
-                    <li class="card-set__item">
+                    <li class="card-set__item" data-aos="fade-up">
                         <a href="" class="card-set-link"><img src="./images/guitar-2.png" alt="brand name" width="314"
                                 height="260" /></a>
                         <h3 class="card-set__title">
@@ -116,7 +117,7 @@
                         </p>
                         <p class="card-set__desc"><b>0</b> colors available</p>
                     </li>
-                    <li class="card-set__item">
+                    <li class="card-set__item" data-aos="fade-down">
                         <a href="" class="card-set-link"><img src="./images/guitar-3.png" alt="brand name" width="314"
                                 height="260" /></a>
                         <h3 class="card-set__title">
@@ -175,7 +176,7 @@
         <section class="gear container">
             <h2 class="section__title gear__title">Gear Heads</h2>
             <ul class="gear-set">
-                <li class="gear-set__item">
+                <li class="gear-set__item" $anm1>
                     <a href=""><img src="./images/gear-1.jpg" alt="heads img" width="616" height="487" /></a>
                     <div class="gear-set__content">
                         <h3 class="gear-set__title">Article Title</h3>
@@ -184,7 +185,8 @@
                 </li>
 
                 <li></li>
-                <li class="gear-set__item gsi__scdr gsi__nomargin">
+                <li class="gear-set__item gsi__scdr gsi__nomargin" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <a href=""><img src="./images/gear-2.jpg" alt="heads img" width="616" height="487" /></a>
                     <div class="gear-set__content">
                         <h3 class="gear-set__title gst__scdr">Article Title</h3>
@@ -194,7 +196,8 @@
                     </div>
 
                 </li>
-                <li class="gear-set__item">
+                <li class="gear-set__item" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <a href=""><img src="./images/gear-3.jpg" alt="heads img" width="400" height="480" /></a>
                     <div class="gear-set__content">
                         <h3 class="gear-set__title">Article Title</h3>
@@ -212,7 +215,8 @@
                     </div>
 
                 </li>
-                <li class="gear-set__item   ">
+                <li class="gear-set__item" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <a href=""><img src="./images/gear-5.jpg" alt="heads img" width="400" height="480" /></a>
                     <div class="gear-set__content">
                         <h3 class="gear-set__title">Article Title</h3>
@@ -287,6 +291,9 @@
 
 
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
+
 </body>
 
 </html>
