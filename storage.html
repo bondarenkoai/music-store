@@ -87,17 +87,34 @@
 
 
         <section class="radio-buttom container">
-            <h2>Please select one of the payment methods</h2>
-            <label class="form-group group-checkbox">
-                <input class="checkbox visually-hidden" type="checkbox">
-                <span class="custom-checkbox">
-                    <svg class="custom-checkbox__icon" width="15" height="15">
-                        <use href="./images/icons.svg#check"></use>
+            <h2 class="radio-buttom__title">Please select one of the payment methods:</h2>
+            <div class="form-pay__type">
+
+                <label class="form-pay__group">
+                    <input class="form-pay__input visually-hidden" type="radio" name="user-pay" checked>
+                    <svg class="form-pay__option" width="40" height="40">
+                        <use href="./images/storage.html/storage-sprite.svg#apple-pay"></use>
                     </svg>
-                </span>
-                <span class="form-policy-desc form-group__label">I agree to the processing of
-                    personal data</span>
-            </label>
+                    <span class="form-pay__label">ApplePay</span>
+                </label>
+
+                <label class="form-pay__group">
+                    <input class="form-pay__input visually-hidden" type="radio" name="user-pay">
+                    <svg class="form-pay__option" width="40" height="40">
+                        <use href="./images/storage.html/storage-sprite.svg#mastercard-pay"></use>
+                    </svg>
+                    <span class="form-pay__label">Mastercard</span>
+                </label>
+
+                <label class="form-pay__group">
+                    <input class="form-pay__input visually-hidden" type="radio" name="user-pay">
+                    <svg class="form-pay__option" width="40" height="40">
+                        <use href="./images/storage.html/storage-sprite.svg#visa-pay"></use>
+                    </svg>
+                    <span class="form-pay__label">Visa</span>
+                </label>
+
+            </div>
         </section>
 
 
