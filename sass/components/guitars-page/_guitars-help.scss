@@ -43,6 +43,11 @@
 
 .more__link {
     color: $p-color;
+    transition: color 250ms $cubic;
+}
+
+.more__link:hover {
+    color: $btn-color;
 }
 
 .answers {
@@ -64,6 +69,13 @@
 .answers__text {
     width: 430px;
     color: $p-color;
+
+    transition: transform 250ms $cubic;
+}
+
+.answers__text:hover {
+    color: $text-color;
+    transform: scale(1.02);
 }
 
 .answers__link::before {
@@ -85,21 +97,45 @@
 }
 
 .div__form {
+    position: relative;
     width: 600px;
-    height: 42px;
     margin: 0 auto;
 
     background-color: $bg-color;
     border: 2px solid $p-color;
-    border-radius: 8px;
+    border-radius: 18px;
 }
 
 .help__form {
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 38px;
+}
+
+.help__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto 10px;
+}
+
+.help__input {
+    outline: transparent;
+    color: $text-color;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $bg-color-2;
+    margin-right: 10px; 
+
+    flex-grow: 1;
+    z-index: 10;
 }
 
 .help__btn {
+    margin-right: 2px;
+
 }
 
 // .btn__icon {

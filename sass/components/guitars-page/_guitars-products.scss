@@ -8,11 +8,11 @@
     padding-top: 36px;
     padding-bottom: 36px;
     background: url(/images/guitars.html/nav-img.jpg);
+    background-size: cover;
 }
 
 .products {
     padding-top: 56px;
-    // background: #ccc;
 }
 
 .brands__list {
@@ -29,28 +29,6 @@
 .brands__item:not(:last-child) {
     margin-right: 25px;
 }
-
-// .brands__btn {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 8px 16px;
-//     // gap: 10px;
-
-//     min-width: 125px;
-//     height: 34px;
-//     border-radius: 32px;
-//     margin: 0 auto;
-
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 1.3;
-//     text-align: center;
-
-//     color: $bg-color;
-//     background-color: $btn-color;
-//     border: 3px solid transparent;
-// }
 
 .brands__btn {
 }
@@ -70,7 +48,6 @@
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
 }
 
 .card-set__item {
@@ -100,8 +77,6 @@
 }
 
 .set__img {
-    // position: fixed;
-    // padding-bottom: 12px;
 }
 
 .card-set__img {
