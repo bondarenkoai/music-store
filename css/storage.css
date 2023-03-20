@@ -108,9 +108,9 @@
   }
 }
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -146,8 +146,16 @@
 /* Типографія */
 /* Відображення */
 /* Інше */
-.nav__logo {
+.logo__img {
   color: #ffffff;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo__img:hover, .logo__img:focus {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .page-header {

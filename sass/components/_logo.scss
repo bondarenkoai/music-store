@@ -4,6 +4,15 @@
 /* Відображення */
 /* Інше */
 
-.nav__logo {
+.logo {
+}
+
+.logo__img {
     color: $bg-color;
+    transition: transform 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.02);
+    }
 }

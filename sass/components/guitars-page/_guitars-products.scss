@@ -16,9 +16,7 @@
 }
 
 .brands__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex;
 
     margin-bottom: 56px;
 }
@@ -81,9 +79,7 @@
 
 .card-set__img {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex;
     margin-left: -24px;
     margin-right: -24px;
 
@@ -139,9 +135,7 @@
 
 .card-set__actions {
     position: absolute;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    @include centeredFlex;
     padding: 30px;
 
     width: 100%;
@@ -150,6 +144,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.3;
+    text-align: center;
 
     color: $bg-color;
     background-color: rgba($color: #4b6383, $alpha: 0.95);
