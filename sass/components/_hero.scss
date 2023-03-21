@@ -135,7 +135,7 @@
     border-radius: 15px;
 }
 
-.group__title {
+.contact-left__title {
     margin-bottom: 60px;
 }
 
@@ -283,14 +283,14 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.contact__title {
+.contact-right__title {
     position: relative;
 
     font-family: "Montserrat", sans-serif;
     margin-bottom: 30px;
 }
 
-.contact__title::after {
+.contact-right__title::after {
     content: "";
 
     position: absolute;
@@ -302,7 +302,7 @@
     border-radius: 3px;
 }
 
-.contact__subtitle {
+.contact-right__subtitle {
     @include p-textMontserrat;
 }
 

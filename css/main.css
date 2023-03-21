@@ -557,7 +557,7 @@ summary {
   border-radius: 15px;
 }
 
-.group__title {
+.contact-left__title {
   margin-bottom: 60px;
 }
 
@@ -791,13 +791,13 @@ summary {
   font-family: "Montserrat", sans-serif;
 }
 
-.contact__title {
+.contact-right__title {
   position: relative;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
 }
 
-.contact__title::after {
+.contact-right__title::after {
   content: "";
   position: absolute;
   left: 0;
@@ -808,7 +808,7 @@ summary {
   border-radius: 3px;
 }
 
-.contact__subtitle {
+.contact-right__subtitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -1067,7 +1067,7 @@ summary {
   margin-left: 32px;
 }
 
-.gsi__scdr {
+.gear-set__item--mode-light {
   background-color: #eaeaea;
 }
 
@@ -1084,11 +1084,11 @@ summary {
   color: #ffffff;
 }
 
-.gst__scdr {
+.gear-set__title--mode-dark {
   color: #202020;
 }
 
-.gear-set__text {
+.gear-set__subtitle {
   margin: 0;
   font-weight: 600;
   font-size: 18px;
@@ -1096,14 +1096,14 @@ summary {
   color: #c4c4c4;
 }
 
-.gsc__scdr {
+.gear-set__subtitle--mode-light {
   color: #767676;
 }
 
 .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

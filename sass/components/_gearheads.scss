@@ -29,7 +29,7 @@
     width: calc((100% - 64px) / 3);
     margin-right: 32px;
 
-        margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .gear-set__item:last-child {
@@ -40,7 +40,7 @@
     margin-left: 32px;
 }
 
-.gsi__scdr {
+.gear-set__item--mode-light  {
     background-color: #eaeaea;
 }
 
@@ -58,11 +58,11 @@
     color: $bg-color;
 }
 
-.gst__scdr {
+.gear-set__title--mode-dark {
     color: #202020;
 }
 
-.gear-set__text {
+.gear-set__subtitle {
     margin: 0;
 
     font-weight: 600;
@@ -71,6 +71,6 @@
     color: #c4c4c4;
 }
 
-.gsc__scdr {
+.gear-set__subtitle--mode-light {
     color: $p-color;
 }
