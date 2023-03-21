@@ -17,26 +17,26 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header /// +"_page-header.scss"+"_guitars-header.scss"  -->
 
-    <!-- Прибрати контейнер із класів, то було для картинки -->
-    <header class="page-header guitars-header container">
+
+    <header class="page-header guitars-header">
 
         <nav class="nav container">
-            <a href="./index.html" class="nav__link">
-                <img src="./images/logo.svg" alt="logo" class="nav__logo" />
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.svg" alt="logo" class="logo__img" />
             </a>
             <ul class="site-nav">
                 <li class="site-nav__item">
-                    <a href="./guitars.html" class="site-nav__link">Guitars</a>
+                    <a href="./guitars.html" class="site-nav__link ">Guitars</a>
                 </li>
                 <li class="site-nav__item">
                     <a href="" class="site-nav__link">Accessories</a>
                 </li>
-                <li class="site-nav__item"><a href="/storage.html" class="site-nav__link">Storage</a></li>
+                <li class="site-nav__item"><a href="/storage.html" class="site-nav__link current">Storage</a></li>
                 <li class="site-nav__item"><a href="" class="site-nav__link">Lessons</a></li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link current">Repairs</a>
+                    <a href="" class="site-nav__link ">Repairs</a>
                 </li>
             </ul>
             <ul class="auth-nav">
@@ -58,7 +58,9 @@
 
 
     <main>
-        <!-- Section socials -->
+
+        <!-- Section socials  ///  +"_storage-menu.scss" -->
+
         <section class="socials container">
             <div class="socials-menu">
                 <button class="button socials-menu__btn">Push open social menu</button>
@@ -82,9 +84,9 @@
 
             </div>
 
-
         </section>
 
+        <!-- Section socials  ///  +"_storage-radio-button.scss" -->
 
         <section class="radio-buttom container">
             <h2 class="radio-buttom__title">Please select one of the payment methods:</h2>
@@ -120,60 +122,73 @@
 
     </main>
 
-    <!-- Footer -->
+    <!-- Footer  ///  +"_footer.scss"  -->
 
     <footer class="footer">
-        <div class="footer__nav container">
-            <ul class="footer__nav-account">
-                <li class="footer__nav-item">
-                    <a href="" class="footer__nav-link"><b>My Account</b></a>
+        <div class="footer-nav container">
+            <ul class="footer-nav__account footer-nav--after">
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link"><b>My Account</b></a>
                 </li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Overview</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Order History</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Wishlist</a></li>
-                <li class="footer__nav-item">
-                    <a href="" class="footer__nav-link">Account information</a>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Overview</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Order History</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Wishlist</a></li>
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link">Account information</a>
                 </li>
             </ul>
-            <ul class="footer__nav-store">
-                <li class="footer__nav-item">
-                    <a href="" class="footer__nav-link"><b>Store</b></a>
+            <ul class="footer-nav__store footer-nav--after">
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link"><b>Store</b></a>
                 </li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Security Notice</a></li>
-                <li class="footer__nav-item">
-                    <a href="" class="footer__nav-link">Location & Hours</a>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Security Notice</a></li>
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link">Location & Hours</a>
                 </li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Rentals</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Privacy Notice</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Rentals</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Privacy Notice</a></li>
             </ul>
-            <div class="foooter__contact">
-                <a href="./index.html">
-                    <img src="./images/logo.svg" alt="logo" />
+            <div class="foooter-contact">
+
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.svg" alt="logo" class="logo__img" />
                 </a>
-                <ul class="contact__social-list">
-                    <li class="social__item"><a class="social__link" href="" aria-label="YouTube link"><svg
-                                class="social__icon" width="22" height="20">
+                <ul class="contact-social__list">
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="YouTube link"><svg class="contact-social__icon" width="22" height="20">
                                 <use href="./images/icons.svg#youtube"></use>
                             </svg></a></li>
-                    <li class="social__item"><a class="social__link" href="" aria-label="Twitter link"><svg
-                                class="social__icon" width="20" height="20">
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="Twitter link"><svg class="contact-social__icon" width="20" height="20">
                                 <use href="./images/icons.svg#twitter"></use>
                             </svg></a></li>
-                    <li class="social__item"><a class="social__link" href="" aria-label="Instagram link"><svg
-                                class="social__icon" width="20" height="20">
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="Instagram link"><svg class="contact-social__icon" width="20" height="20">
                                 <use href="./images/icons.svg#instagram"></use>
                             </svg></a></li>
-                    <li class="social__item"><a class="social__link" href="" aria-label="Facebook link"><svg
-                                class="social__icon" width="20" height="20">
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="Facebook link"><svg class="contact-social__icon" width="20" height="20">
                                 <use href="./images/icons.svg#facebook"></use>
                             </svg></a></li>
                 </ul>
             </div>
         </div>
-        <div class="foooter__copyright">
-            <p class="foooter__copyright-text container">&copy;2023 Music Store</p>
+        <div class="foooter-copyright">
+            <p class="foooter-copyright__text container">&copy;2023 Music Store</p>
         </div>
     </footer>
+
+    <button class="scroll-top" type="button">
+        <svg width="30" height="30">
+            <use href="./images/icons.svg#arrow-up"></use>
+        </svg>
+    </button>
+
+
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
+
 </body>
 
 </html>

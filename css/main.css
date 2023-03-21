@@ -427,7 +427,7 @@ summary {
   color: #fcfcfc;
 }
 
-.site-nav__link.current {
+.current {
   color: #ff753a;
 }
 

@@ -6,7 +6,7 @@
     background-color: #ececec;
 }
 
-.help__abb {
+.help-wrap {
     display: flex;
     margin-bottom: 36px;
 }
@@ -41,7 +41,7 @@
     color: $p-color;
 }
 
-.more__link {
+.help__excerpt {
     color: $p-color;
     transition: color 250ms $cubic;
 }
@@ -50,35 +50,35 @@
     color: $btn-color;
 }
 
-.answers {
+.help-answers {
     margin-left: auto;
 }
 
-.answers__list {
+.help-answers__list {
 }
 
-.answers__item {
+.help-answers__item {
 }
-.answers__link {
+.help-answers__link {
     display: flex;
     align-items: center;
 
     margin-bottom: 20px;
 }
 
-.answers__text {
+.help-answers__text {
     width: 430px;
     color: $p-color;
 
     transition: transform 250ms $cubic;
 }
 
-.answers__text:hover {
+.help-answers__text:hover {
     color: $text-color;
     transform: scale(1.02);
 }
 
-.answers__link::before {
+.help-answers__link::before {
     content: "";
     width: 35px;
     height: 35px;
@@ -88,15 +88,15 @@
     background-size: contain;
 }
 
-.al__icon-2::before {
+.help-answers__link--icon-2::before {
     background-image: url("../../images/guitars.html/help-2.svg");
 }
 
-.al__icon-3::before {
+.help-answers__link--icon-3::before {
     background-image: url("../../images/guitars.html/help-3.svg");
 }
 
-.div__form {
+.help-form__wrap {
     position: relative;
     width: 600px;
     margin: 0 auto;
@@ -106,14 +106,14 @@
     border-radius: 18px;
 }
 
-.help__form {
+.help-form {
     display: flex;
     align-items: center;
     width: 100%;
     height: 38px;
 }
 
-.help__icon {
+.help-form__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +121,7 @@
     margin: auto 10px;
 }
 
-.help__input {
+.help-form__input {
     outline: transparent;
     color: $text-color;
     background-color: transparent;
@@ -133,7 +133,7 @@
     z-index: 10;
 }
 
-.help__btn {
+.help-form__btn {
     margin-right: 2px;
 
 }
