@@ -1,6 +1,6 @@
 // @import "./base/normalize";
 @import "./utils/variables";
-// @import "./utils/mixins";
+@import "./utils/mixins";
 @import "./components/button";
 @import "./components/logo";
 @import "./components/page-header";
@@ -8,6 +8,6 @@
 
 @import "./base/general";
 
-@import "./components/guitars-page/guitars-nav";
+@import "./components/guitars-page/guitars-headers";
 @import "./components/storage-page/storage-menu";
 @import "./components/storage-page/storage-radio-button";

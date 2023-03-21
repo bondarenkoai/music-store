@@ -7,31 +7,6 @@
 .products {
 }
 
-.section__title {
-    margin-bottom: 42px;
-
-    // position: absolute;
-    // left: -0.36%;
-    // right: 0%;
-    // top: 14.29%;
-    // bottom: 0%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.2;
-    text-align: center;
-
-    /* #505050 */
-
-    color: $text-color;
-}
-
 .section__title::before {
     content: "";
     margin-bottom: 8px;
@@ -74,7 +49,7 @@
     padding-left: 24px;
 }
 
-.pic-position {
+.card-set__pic--position {
     width: 400px;
     height: 252px;
     margin-left: -24px;

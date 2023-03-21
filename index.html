@@ -19,7 +19,7 @@
 
 <body>
 
-    <!-- Header -->
+    <!-- Header /// +"_page-header.scss"+"_guitars-header.scss"-->
 
     <div class="header-bgimage"></div>
     <header class=" page-header">
@@ -60,7 +60,7 @@
     <main>
         <div class="container ">
 
-            <!-- Section Hero -->
+            <!-- Section Hero /// +"_hero.scss"  -->
 
             <section class="hero container">
                 <h1 class="hero__title">
@@ -81,43 +81,43 @@
 
                 </article>
 
-                <!-- Backdrop -->
+                <!-- Backdrop /// +"_backdrop.scss"  -->
 
                 <div class="backdrop is-hidden" data-modal>
-                    <div class="backdrop__text">
+                    <div class="modal-wrapper">
 
 
                         <div class="contact-left">
                             <h2 class="contact-left__title">Send us a message</h2>
-                            <form class="contact-form" name="contact-form">
-                                <label class="form-group">
-                                    <input class="form-group__input" type="text" name="user-name"
+                            <form class="modal-form" name="modal-form">
+                                <label class="modal-form__group">
+                                    <input class="modal-form__input" type="text" name="user-name"
                                         placeholder="your name..">
-                                    <span class="form-group__label">Name</span>
+                                    <span class="modal-form__label">Name</span>
                                 </label>
-                                <label class="form-group">
-                                    <input class="form-group__input" type="tel" name="user-phone"
+                                <label class="modal-form__group">
+                                    <input class="modal-form__input" type="tel" name="user-phone"
                                         placeholder="+1-234..">
-                                    <span class="form-group__label">Phone</span>
+                                    <span class="modal-form__label">Phone</span>
                                 </label>
-                                <label class="form-group">
-                                    <input class="form-group__input" type="email" name="user-mail"
+                                <label class="modal-form__group">
+                                    <input class="modal-form__input" type="email" name="user-mail"
                                         placeholder="email@..">
-                                    <span class="form-group__label">Email</span>
+                                    <span class="modal-form__label">Email</span>
                                 </label>
-                                <label class="form-group">
-                                    <textarea class="form-group__textarea" name="message" cols="30" rows="5"
+                                <label class="modal-form__group">
+                                    <textarea class="modal-form__textarea" name="message" cols="30" rows="5"
                                         placeholder="write your message.."></textarea>
-                                    <span class="form-group__label">Message</span>
+                                    <span class="modal-form__label">Message</span>
                                 </label>
-                                <label class="form-group group-checkbox">
-                                    <input class="checkbox visually-hidden" type="checkbox">
-                                    <span class="custom-checkbox">
-                                        <svg class="custom-checkbox__icon" width="15" height="15">
+                                <label class="modal-form__group modal-form__checkbox">
+                                    <input class="modal-form__checkbox visually-hidden" type="checkbox">
+                                    <span class="modal-form__custom-checkbox">
+                                        <svg class="modal-form__custom-checkbox-icon" width="15" height="15">
                                             <use href="./images/icons.svg#check"></use>
                                         </svg>
                                     </span>
-                                    <span class="form-policy-desc form-group__label">I agree to the processing of
+                                    <span class="modal-form__policy-desc modal-form__label">I agree to the processing of
                                         personal data</span>
                                 </label>
 
@@ -177,72 +177,66 @@
             </section>
         </div>
 
-        <!-- New Product section -->
+        <!-- New Product section  ///  +"_products.scss" -->
 
         <div class="container">
-            <section class="products ">
+            <section class="products">
                 <h2 class="section__title">New Products</h2>
                 <ul class="card-set">
                     <li class="card-set__item" data-aos="fade-down">
-                        <div class="all">
-                            <a class="card-set__link" href="">
-                                <div class="pic-position">
-                                    <img class="card-set__pic" src="./images/guitar-1.png" alt="brand name" width="314"
-                                        height="260" />
-                                </div>
+                        <a class="card-set__link" href="">
+                            <div class="card-set__pic--position">
+                                <img class="card-set__pic" src="./images/guitar-1.png" alt="brand name" width="314"
+                                    height="260" />
+                            </div>
 
-                                <h3 class="card-set__title">
-                                    Brand Name <span>$2,995</span>
-                                </h3>
-                                <p class="card-set__content">
-                                    Product description here
-                                </p>
-                                <p class="card-set__desc"><b>0</b> colors available</p>
-                            </a>
-                        </div>
+                            <h3 class="card-set__title">
+                                Brand Name <span>$2,995</span>
+                            </h3>
+                            <p class="card-set__content">
+                                Product description here
+                            </p>
+                            <p class="card-set__desc"><b>0</b> colors available</p>
+                        </a>
                     </li>
                     <li class="card-set__item" data-aos="fade-up">
-                        <div class="all">
-                            <a class="card-set__link" href="">
-                                <div class="pic-position">
-                                    <img class="card-set__pic" src="./images/guitar-2.png" alt="brand name" width="314"
-                                        height="260" />
-                                </div>
+                        <a class="card-set__link" href="">
+                            <div class="card-set__pic--position">
+                                <img class="card-set__pic" src="./images/guitar-2.png" alt="brand name" width="314"
+                                    height="260" />
+                            </div>
 
-                                <h3 class="card-set__title">
-                                    Brand Name <span>$2,995</span>
-                                </h3>
-                                <p class="card-set__content">
-                                    Product description here
-                                </p>
-                                <p class="card-set__desc"><b>0</b> colors available</p>
-                            </a>
-                        </div>
+                            <h3 class="card-set__title">
+                                Brand Name <span>$2,995</span>
+                            </h3>
+                            <p class="card-set__content">
+                                Product description here
+                            </p>
+                            <p class="card-set__desc"><b>0</b> colors available</p>
+                        </a>
                     </li>
                     <li class="card-set__item" data-aos="fade-down">
-                        <div class="all">
-                            <a class="card-set__link" href="">
-                                <div class="pic-position">
-                                    <img class="card-set__pic" src="./images/guitar-3.png" alt="brand name" width="314"
-                                        height="260" />
-                                </div>
+                        <a class="card-set__link" href="">
+                            <div class="card-set__pic--position">
+                                <img class="card-set__pic" src="./images/guitar-3.png" alt="brand name" width="314"
+                                    height="260" />
+                            </div>
 
-                                <h3 class="card-set__title">
-                                    Brand Name <span>$2,995</span>
-                                </h3>
-                                <p class="card-set__content">
-                                    Product description here
-                                </p>
-                                <p class="card-set__desc"><b>0</b> colors available</p>
-                            </a>
-                        </div>
+                            <h3 class="card-set__title">
+                                Brand Name <span>$2,995</span>
+                            </h3>
+                            <p class="card-set__content">
+                                Product description here
+                            </p>
+                            <p class="card-set__desc"><b>0</b> colors available</p>
+                        </a>
                     </li>
 
                 </ul>
             </section>
         </div>
 
-        <!-- Popular Finds section -->
+        <!-- Popular Finds section  ///  +"_finds.scss" -->
 
         <section class="finds container">
             <h2 class="section__title finds-title">Popular Finds</h2>
@@ -286,7 +280,7 @@
             </ul>
         </section>
 
-        <!-- Gear Heads section -->
+        <!-- Gear Heads section  ///  +"_gearheads.scss" -->
 
         <section class="gear container">
             <h2 class="section__title gear__title">Gear Heads</h2>
@@ -300,8 +294,8 @@
                 </li>
 
                 <li></li>
-                <li class="gear-set__item gear-set__item--mode-light gsi__nomargin" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
+                <li class="gear-set__item gear-set__item--mode-light gsi__nomargin" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <a href=""><img src="./images/gear-2.jpg" alt="heads img" width="616" height="487" /></a>
                     <div class="gear-set__content">
                         <h3 class="gear-set__title gear-set__title--mode-dark">Article Title</h3>
@@ -343,59 +337,59 @@
         </section>
     </main>
 
-    <!-- Footer-->
+    <!-- Footer  ///  +"_footer.scss"  -->
 
     <footer class="footer">
-        <div class="footer__nav container">
-            <ul class="footer__nav-account link__after">
-                <li class="footer__nav-item">
-                    <a href="" class="footer__nav-link"><b>My Account</b></a>
+        <div class="footer-nav container">
+            <ul class="footer-nav__account footer-nav--after">
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link"><b>My Account</b></a>
                 </li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Overview</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Order History</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Wishlist</a></li>
-                <li class="footer__nav-item">
-                    <a href="" class="footer__nav-link">Account information</a>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Overview</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Order History</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Wishlist</a></li>
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link">Account information</a>
                 </li>
             </ul>
-            <ul class="footer__nav-store link__after">
-                <li class="footer__nav-item">
-                    <a href="" class="footer__nav-link"><b>Store</b></a>
+            <ul class="footer-nav__store footer-nav--after">
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link"><b>Store</b></a>
                 </li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Security Notice</a></li>
-                <li class="footer__nav-item">
-                    <a href="" class="footer__nav-link">Location & Hours</a>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Security Notice</a></li>
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link">Location & Hours</a>
                 </li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Rentals</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Privacy Notice</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Rentals</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Privacy Notice</a></li>
             </ul>
-            <div class="foooter__contact">
+            <div class="foooter-contact">
 
                 <a href="./index.html" class="logo">
                     <img src="./images/logo.svg" alt="logo" class="logo__img" />
                 </a>
-                <ul class="contact__social-list">
-                    <li class="social__item"><a class="social__link" href="" aria-label="YouTube link"><svg
-                                class="social__icon" width="22" height="20">
+                <ul class="contact-social__list">
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="YouTube link"><svg class="contact-social__icon" width="22" height="20">
                                 <use href="./images/icons.svg#youtube"></use>
                             </svg></a></li>
-                    <li class="social__item"><a class="social__link" href="" aria-label="Twitter link"><svg
-                                class="social__icon" width="20" height="20">
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="Twitter link"><svg class="contact-social__icon" width="20" height="20">
                                 <use href="./images/icons.svg#twitter"></use>
                             </svg></a></li>
-                    <li class="social__item"><a class="social__link" href="" aria-label="Instagram link"><svg
-                                class="social__icon" width="20" height="20">
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="Instagram link"><svg class="contact-social__icon" width="20" height="20">
                                 <use href="./images/icons.svg#instagram"></use>
                             </svg></a></li>
-                    <li class="social__item"><a class="social__link" href="" aria-label="Facebook link"><svg
-                                class="social__icon" width="20" height="20">
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="Facebook link"><svg class="contact-social__icon" width="20" height="20">
                                 <use href="./images/icons.svg#facebook"></use>
                             </svg></a></li>
                 </ul>
             </div>
         </div>
-        <div class="foooter__copyright">
-            <p class="foooter__copyright-text container">&copy;2023 Music Store</p>
+        <div class="foooter-copyright">
+            <p class="foooter-copyright__text container">&copy;2023 Music Store</p>
         </div>
     </footer>
 

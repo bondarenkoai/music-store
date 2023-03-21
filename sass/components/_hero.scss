@@ -94,8 +94,6 @@
 }
 
 .hero__btn {
-    // width: 129px;
-
     animation: swing 10s ease-in-out infinite forwards;
 }
 
@@ -118,7 +116,7 @@
     pointer-events: none;
 }
 
-.backdrop__text {
+.modal-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -159,10 +157,10 @@
     border-radius: 13px 0 0 13px;
 }
 
-.contact-form {
+.modal-form {
 }
 
-.form-group {
+.modal-form__group {
     position: relative;
     display: block;
     padding-bottom: 30px;
@@ -170,7 +168,7 @@
     color: $bg-color-2;
 }
 
-.form-group .form-group__label {
+.modal-form__group .modal-form__label {
     position: absolute;
     top: -5px;
     left: 0;
@@ -178,18 +176,18 @@
     transition: all 400ms ease;
 }
 
-.form-group__label {
+.modal-form__label {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.3;
 }
 
-.form-group:last-child {
+.modal-form__group:last-child {
     // margin-top: 30px;
     // margin-bottom: 30px;
 }
 
-.form-group__input {
+.modal-form__input {
     margin-bottom: 40px;
     width: 100%;
     padding: 3px;
@@ -201,22 +199,22 @@
     border-bottom: 1px solid $bg-color-2;
 }
 
-.form-group__input:focus + .form-group__label,
-.form-group__input:not(:placeholder-shown) + .form-group__label {
+.modal-form__input:focus + .modal-form__label,
+.modal-form__input:not(:placeholder-shown) + .modal-form__label {
     transform: translateY(-25px);
 }
 
-.form-group__input::placeholder {
+.modal-form__input::placeholder {
     opacity: 0;
 
     transition: opacity 300ms ease-in;
 }
 
-.form-group__input:focus::placeholder {
+.modal-form__input:focus::placeholder {
     opacity: 1;
 }
 
-.form-group__textarea {
+.modal-form__textarea {
     margin-bottom: 20px;
     min-width: 100%;
     resize: none;
@@ -229,27 +227,27 @@
     border-bottom: 1px solid $bg-color-2;
 }
 
-.form-group__textarea::placeholder {
+.modal-form__textarea::placeholder {
     opacity: 0;
 
     transition: opacity 300ms ease-in;
 }
 
-.form-group__textarea:focus::placeholder {
+.modal-form__textarea:focus::placeholder {
     opacity: 1;
 }
 
-.form-group__textarea:focus + .form-group__label,
-.form-group__textarea:not(:placeholder-shown) + .form-group__label {
+.modal-form__textarea:focus + .modal-form__label,
+.modal-form__textarea:not(:placeholder-shown) + .modal-form__label {
     transform: translateY(-25px);
 }
 
-.group-checkbox {
+.modal-form__checkbox {
     display: flex;
     align-items: center;
 }
 
-.custom-checkbox {
+.modal-form__custom-checkbox {
     width: 20px;
     height: 20px;
     @include centeredFlex();
@@ -260,17 +258,19 @@
     outline-offset: -2px;
 }
 
-.custom-checkbox__icon {
+.modal-form__custom-checkbox-icon {
     opacity: 0;
     transition: opacity 200ms ease-in;
 }
 
-.checkbox:checked + .custom-checkbox .custom-checkbox__icon {
+.modal-form__checkbox:checked
+    + .modal-form__custom-checkbox
+    .modal-form__custom-checkbox-icon {
     opacity: 1;
     transition: opacity 200ms ease-in;
 }
 
-.form-policy-desc {
+.modal-form__policy-desc {
     padding-left: 30px;
     padding-top: 6px;
 }
@@ -278,6 +278,7 @@
 // Contact Form Rigth
 
 .contact-right {
+    width: 50%;
     padding: 50px;
 
     font-family: "Montserrat", sans-serif;
