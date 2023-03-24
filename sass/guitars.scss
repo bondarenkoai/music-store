@@ -1,13 +1,29 @@
-@import "./base/normalize";
+//utils
+
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/visually-hidden";
+
+//base styles
+
+@import "./base/normalize";
+@import "./base/common";
+@import "./base/js-selectors";
+@import "./base/animations";
+@import "./base/container";
+
+//components
+
+@import "./components/page-header";
 @import "./components/button";
 @import "./components/logo";
-@import "./components/page-header";
+@import "./components/modal-form/module";
+@import "./components/contacts-form";
+@import "./components/slide-top-btn";
 @import "./components/footer";
 
-@import "./base/common";
-
-@import "./components/guitars-page/guitars-header";
-@import "./components/guitars-page/guitars-products";
-@import "./components/guitars-page/guitars-help";
+//layouts
+@import "./layouts/guitars-page/guitars-header";
+@import "./layouts/guitars-page/guitars-products";
+@import "./layouts/guitars-page/guitars-help"; ;

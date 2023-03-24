@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
-    // gap: 10px;
 
     min-width: 125px;
     height: 34px;
@@ -22,14 +21,14 @@
 
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button:hover,
-.button:focus,
-.button:active {
-    // color: $bg-color;
-    // background-color: $color-25;
-    color: $btn-color;
-    background-color: $bg-color;
-    border-color: $btn-color;
+    &:hover,
+    &:focus,
+    &:active {
+        // color: $bg-color;
+        // background-color: $color-25;
+        color: $btn-color;
+        background-color: $bg-color;
+        border-color: $btn-color;
+    }
 }

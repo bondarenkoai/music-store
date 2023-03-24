@@ -1,13 +1,29 @@
-@import "./base/normalize";
+//utils
+
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./components/logo";
+@import "./utils/placeholders";
+@import "./utils/visually-hidden";
+
+//base styles
+
+@import "./base/normalize";
+@import "./base/common";
+@import "./base/js-selectors";
+@import "./base/animations";
+@import "./base/container";
+
+//components
+
 @import "./components/page-header";
-@import "./components/hero";
-@import "./components/products";
-@import "./components/finds";
-@import "./components/gearheads";
 @import "./components/button";
+@import "./components/logo";
+@import "./components/modal-form/module";
+@import "./components/slide-top-btn";
 @import "./components/footer";
 
-@import "./base/common";
+//layouts
+@import "./layouts/hero";
+@import "./layouts/products";
+@import "./layouts/finds";
+@import "./layouts/gearheads";

@@ -2,8 +2,10 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/visually-hidden";
 
-//base styles 
+//base styles
 
 @import "./base/normalize";
 @import "./base/common";
@@ -11,16 +13,17 @@
 @import "./base/animations";
 @import "./base/container";
 
-
 //components
 
+@import "./components/page-header";
 @import "./components/button";
 @import "./components/logo";
+@import "./components/modal-form/module";
+@import "./components/contacts-form";
+@import "./components/slide-top-btn";
 @import "./components/footer";
 
-
 //layouts
-@import "./components/page-header";
-@import "./components/guitars-page/guitars-header";
-@import "./components/storage-page/storage-menu";
-@import "./components/storage-page/storage-radio-button";
+@import "./layouts/guitars-page/guitars-header";
+@import "./layouts/storage-page/storage-menu";
+@import "./layouts/storage-page/storage-radio-button";
