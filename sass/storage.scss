@@ -1,13 +1,26 @@
-@import "./base/normalize";
+//utils
+
 @import "./utils/variables";
 @import "./utils/mixins";
+
+//base styles 
+
+@import "./base/normalize";
+@import "./base/common";
+@import "./base/js-selectors";
+@import "./base/animations";
+@import "./base/container";
+
+
+//components
+
 @import "./components/button";
 @import "./components/logo";
-@import "./components/page-header";
 @import "./components/footer";
 
-@import "./base/general";
 
+//layouts
+@import "./components/page-header";
 @import "./components/guitars-page/guitars-header";
 @import "./components/storage-page/storage-menu";
 @import "./components/storage-page/storage-radio-button";
