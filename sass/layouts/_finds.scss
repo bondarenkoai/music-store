@@ -8,16 +8,7 @@
     background: #ececec;
 }
 
-
 .finds-title {
-    // position: absolute;
-    // left: -0.36%;
-    // right: 0%;
-    // top: 14.29%;
-    // bottom: 0%;
-
-    /* #505050 */
-
     margin-bottom: 42px;
 }
 
@@ -34,9 +25,10 @@
 
 .card-set__img {
     transition: transform linear 250ms;
-}
-.card-set__img:hover {
-    transform: scale(1.2);
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .card-set__title {
