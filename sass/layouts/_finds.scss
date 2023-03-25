@@ -12,17 +12,6 @@
     margin-bottom: 42px;
 }
 
-.card-set {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.card-set__item {
-}
-
-.card-set__link {
-}
-
 .card-set__img {
     transition: transform linear 250ms;
 
@@ -31,14 +20,3 @@
     }
 }
 
-.card-set__title {
-    // color: $color-25;
-}
-
-.card-set__content {
-    // color: $p-color;
-}
-
-.card-set__desc {
-    // color: $text-color;
-}

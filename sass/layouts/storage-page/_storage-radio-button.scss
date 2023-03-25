@@ -10,16 +10,12 @@
     font-size: 40px;
     line-height: 1.2;
     text-align: center;
-
     /* #505050 */
-
     color: $text-color;
 }
 
 .form-pay__type {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex;
 }
 
 .form-pay__group {
@@ -32,16 +28,15 @@
 }
 
 .form-pay__input {
+    &:checked + .form-pay__option {
+        fill: $btn-color;
+    }
 }
 .form-pay__option {
     margin-right: 10px;
     filter: grayscale(0);
 
     transition: fill 300ms ease-in;
-}
-
-.form-pay__input:checked + .form-pay__option {
-    fill: $btn-color;
 }
 
 .form-pay__label {

@@ -17,24 +17,22 @@
 }
 
 .gear-set__item {
-    // margin-right: 32px;
     margin-bottom: 48px;
     background-color: $color-25;
-
     // outline: 2px solid red;
     border-radius: 10px;
+    
+    &:nth-last-child(-n + 3) {
+        width: calc((100% - 64px) / 3);
+        margin-right: 32px;
+        margin-bottom: 0;
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-.gear-set__item:nth-last-child(-n + 3) {
-    width: calc((100% - 64px) / 3);
-    margin-right: 32px;
-
-    margin-bottom: 0;
-}
-
-.gear-set__item:last-child {
-    margin-right: 0;
-}
 
 .gsi__nomargin {
     margin-left: 32px;
