@@ -27,7 +27,8 @@
     width: 1264px;
     height: 255px;
 
-    background: url(../../../images/article-lesson.png);
+    background: $btn-color;
+    background-image: url(../images/article-lesson.png);
     background-repeat: no-repeat;
     background-size: initial;
     background-position: center;
