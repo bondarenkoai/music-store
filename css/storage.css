@@ -439,6 +439,7 @@ section {
 .header-bgimage {
   position: absolute;
   width: 100%;
+  min-width: 1300px;
   height: 808px;
   margin-left: 0;
   margin-right: 0;
@@ -936,6 +937,8 @@ section {
 }
 
 .footer {
+  min-width: 1300px;
+  width: 100%;
   background-color: #505050;
   padding-top: 69px;
   color: white;
