@@ -1,6 +1,25 @@
 .container {
-    width: 1300px;
+    margin: 0 auto;
     padding-left: 18px;
     padding-right: 18px;
-    margin: 0 auto;
+
+    @include media(mobile) {
+        width: 375px;
+    }
+
+    // @media screen and (min-width: 375px) {
+    //     width: 375px;
+    // }
+
+    @include media(tablet) {
+        width: 768px;
+    }
+
+    // @media screen and (min-width: 768px) {
+    //     width: 768px;
+    // }
+
+    @include media(desktop) {
+        width: 1300px;
+    }
 }

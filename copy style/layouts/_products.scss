@@ -1,0 +1,28 @@
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
+
+.products {
+}
+
+.card-set__pic--position {
+    width: 400px;
+    height: 252px;
+    margin-left: -24px;
+
+    display: flex;
+    justify-content: center;
+
+    background: radial-gradient(
+        98.56% 98.92% at 1.22% 1.08%,
+        #fbfbfb 0%,
+        #d3d3d3 100%
+    );
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-set__pic {
+    margin-top: -30px;
+}

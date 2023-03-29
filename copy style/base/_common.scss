@@ -29,13 +29,8 @@ p {
 }
 
 section {
-    padding-top: 44px;
-    padding-bottom: 44px;
-
-    @include media(tablet) {
-         padding-top: 88px;
-        padding-bottom: 88px;
-    }
+    padding-top: 88px;
+    padding-bottom: 88px;
 }
 
 .section__title {

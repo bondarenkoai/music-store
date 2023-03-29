@@ -1,0 +1,41 @@
+.socials {
+    background-color: $text-color;
+}
+
+.socials-menu {
+    position: relative;
+    background-color: $color-25;
+    padding-top: 20px;
+    padding-bottom: 160px;
+}
+
+.socials-menu__btn {
+    position: relative;
+    z-index: 10;
+    
+}
+
+.socials-menu__btn:hover ~ .socials-menu__list .socials-menu__item {
+    transform: translateY(calc(var(--item) *40px) ) ;
+}
+
+.socials-menu__list {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    
+    width: 200px;
+
+    transform: translateX(-50%);
+}
+
+.socials-menu__item {
+    position: absolute;
+
+    padding: 5px;
+}
+
+.socials-menu__link {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,22 @@
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
+
+.finds {
+    background: #ececec;
+}
+
+.finds-title {
+    margin-bottom: 42px;
+}
+
+.card-set__img {
+    transition: transform linear 250ms;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+

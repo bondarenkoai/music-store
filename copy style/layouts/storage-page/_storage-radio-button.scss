@@ -1,0 +1,47 @@
+.radio-buttom {
+    // display: flex;
+}
+
+.radio-buttom__title {
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    /* #505050 */
+    color: $text-color;
+}
+
+.form-pay__type {
+    @include centeredFlex;
+}
+
+.form-pay__group {
+    display: flex;
+    align-items: center;
+
+    margin-right: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-pay__input {
+    &:checked + .form-pay__option {
+        fill: $btn-color;
+    }
+}
+.form-pay__option {
+    margin-right: 10px;
+    filter: grayscale(0);
+
+    transition: fill 300ms ease-in;
+}
+
+.form-pay__label {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: $color-25;
+}

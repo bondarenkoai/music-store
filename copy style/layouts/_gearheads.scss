@@ -1,0 +1,74 @@
+/* Позиціювання */
+/* Блокова модель */
+/* Типографія */
+/* Відображення */
+/* Інше */
+
+.gear {
+}
+
+.gear__title {
+    margin-bottom: 48px;
+}
+
+.gear-set {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gear-set__item {
+    margin-bottom: 48px;
+    background-color: $color-25;
+    // outline: 2px solid red;
+    border-radius: 10px;
+    
+    &:nth-last-child(-n + 3) {
+        width: calc((100% - 64px) / 3);
+        margin-right: 32px;
+        margin-bottom: 0;
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.gsi__nomargin {
+    margin-left: 32px;
+}
+
+.gear-set__item--mode-light  {
+    background-color: #eaeaea;
+}
+
+.gear-set__content {
+    padding: 32px;
+}
+
+.gear-set__title {
+    margin: 0;
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    color: $bg-color;
+}
+
+.gear-set__title--mode-dark {
+    color: #202020;
+}
+
+.gear-set__subtitle {
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #c4c4c4;
+}
+
+.gear-set__subtitle--mode-light {
+    color: $p-color;
+}

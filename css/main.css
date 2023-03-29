@@ -287,8 +287,14 @@ p {
 }
 
 section {
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
 }
 
 .section__title {
@@ -432,10 +438,24 @@ section {
   }
 }
 .container {
-  width: 1300px;
+  margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
-  margin: 0 auto;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .container {
+    width: 1300px;
+  }
 }
 
 .header-bgimage {
