@@ -298,15 +298,9 @@ section {
 }
 
 .section__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -314,7 +308,7 @@ section {
   margin-bottom: 42px;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 24px;
   line-height: 1.2;
   text-align: center;
   /* #505050 */
@@ -326,6 +320,17 @@ section {
   width: 80px;
   height: 3px;
   background-color: #ab0433;
+}
+@media screen and (min-width: 768px) {
+  .section__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 40px;
+  }
 }
 
 @-webkit-keyframes fade-left-to-right {
@@ -462,17 +467,33 @@ section {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 1600px;
-  height: 808px;
+  width: 375px;
+  height: 507px;
   margin: 0 auto;
   background: rgba(2, 6, 11, 0.7);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
-  background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(/images/hero-bgi-mq-mobile.jpg);
+  background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(/images/hero-bgi-mq-mobile.jpg);
   background-size: cover;
   background-position: center;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -10;
+}
+@media screen and (min-width: 768px) {
+  .header-bgimage {
+    width: 768px;
+    height: 808px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+    background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .header-bgimage {
+    width: 1600px;
+    height: 808px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+    background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+  }
 }
 
 .page-header {
@@ -480,12 +501,17 @@ section {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+}
+@media screen and (min-width: 1300px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site-nav {

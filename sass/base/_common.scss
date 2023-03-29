@@ -33,22 +33,20 @@ section {
     padding-bottom: 44px;
 
     @include media(tablet) {
-         padding-top: 88px;
+        padding-top: 88px;
         padding-bottom: 88px;
     }
 }
 
 .section__title {
-    display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 
     margin-bottom: 42px;
 
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 24px;
     line-height: 1.2;
     text-align: center;
     /* #505050 */
@@ -61,5 +59,12 @@ section {
         width: 80px;
         height: 3px;
         background-color: $red-line;
+    }
+
+    @include media(tablet) {
+        display: flex;
+        justify-content: center;
+
+        font-size: 40px;
     }
 }

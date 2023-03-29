@@ -2,9 +2,10 @@
     position: absolute;
     top: 0;
     left: 50%;
+
     // width: 100%;
-    width: 1600px;
-    height: 808px;
+    width: 375px;
+    height: 507px;
 
     margin: 0 auto;
     // @include centeredFlex;
@@ -15,12 +16,36 @@
             rgba(2, 6, 11, 0.7) 0%,
             rgba(2, 6, 11, 0) 32.85%
         ),
-        url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+        url(/images/hero-bgi-mq-mobile.jpg);
     background-size: cover;
     background-position: center;
     transform: translateX(-50%);
 
     z-index: -10;
+
+    @include media(tablet) {
+        width: 768px;
+        height: 808px;
+
+        background-image: linear-gradient(
+                180deg,
+                rgba(2, 6, 11, 0.7) 0%,
+                rgba(2, 6, 11, 0) 32.85%
+            ),
+            url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+    }
+
+    @include media(desktop) {
+        width: 1600px;
+        height: 808px;
+
+        background-image: linear-gradient(
+                180deg,
+                rgba(2, 6, 11, 0.7) 0%,
+                rgba(2, 6, 11, 0) 32.85%
+            ),
+            url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+    }
 }
 
 .page-header {
@@ -29,8 +54,12 @@
 }
 
 .nav {
-    display: flex;
-    align-items: center;
+    display: none;
+
+    @include media(desktop) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .site-nav {

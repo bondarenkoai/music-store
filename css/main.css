@@ -298,15 +298,9 @@ section {
 }
 
 .section__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -314,7 +308,7 @@ section {
   margin-bottom: 42px;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 24px;
   line-height: 1.2;
   text-align: center;
   /* #505050 */
@@ -326,6 +320,17 @@ section {
   width: 80px;
   height: 3px;
   background-color: #ab0433;
+}
+@media screen and (min-width: 768px) {
+  .section__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 40px;
+  }
 }
 
 @-webkit-keyframes fade-left-to-right {
@@ -462,17 +467,33 @@ section {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 1600px;
-  height: 808px;
+  width: 375px;
+  height: 507px;
   margin: 0 auto;
   background: rgba(2, 6, 11, 0.7);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
-  background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(/images/hero-bgi-mq-mobile.jpg);
+  background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(/images/hero-bgi-mq-mobile.jpg);
   background-size: cover;
   background-position: center;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -10;
+}
+@media screen and (min-width: 768px) {
+  .header-bgimage {
+    width: 768px;
+    height: 808px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+    background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .header-bgimage {
+    width: 1600px;
+    height: 808px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+    background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+  }
 }
 
 .page-header {
@@ -480,12 +501,17 @@ section {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+}
+@media screen and (min-width: 1300px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site-nav {
@@ -937,85 +963,6 @@ section {
   color: #ff753a;
 }
 
-.card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.card-set__item {
-  width: 400px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  -webkit-filter: drop-shadow(0px 2px 4px rgba(28, 5, 77, 0.1)) drop-shadow(0px 12px 32px rgba(0, 0, 0, 0.05));
-          filter: drop-shadow(0px 2px 4px rgba(28, 5, 77, 0.1)) drop-shadow(0px 12px 32px rgba(0, 0, 0, 0.05));
-}
-.card-set__item:not(:last-child) {
-  margin-right: 32px;
-}
-
-.card-set__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-right: 24px;
-  padding-left: 24px;
-}
-
-.card-set__title {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 0;
-  margin-top: 16px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.3;
-  color: #252525;
-}
-
-.card-set__content {
-  margin-top: 6px;
-  margin-bottom: 0px;
-  height: 42px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.3;
-  color: #767676;
-}
-
-.card-set__desc {
-  margin-top: 8px;
-  margin-bottom: 26px;
-  width: 115px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: left;
-  color: #505050;
-  text-align: center;
-  border: 1px solid #eaeaea;
-  border-radius: 20px;
-}
-
 .scroll-top {
   position: fixed;
   bottom: 5%;
@@ -1144,7 +1091,7 @@ section {
 
 .hero__title {
   font-weight: 700;
-  font-size: 56px;
+  font-size: 21px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -1156,9 +1103,10 @@ section {
 
 .hero__article {
   text-align: center;
-  width: 1264px;
-  height: 255px;
-  background-image: url(https://bondarenkoai.github.io/music-store/images/article-lesson.png);
+  width: 328px;
+  height: 168px;
+  background: #ff753a;
+  background-image: url(/images/article-lesson-mq-mobile.png);
   background-repeat: no-repeat;
   background-size: initial;
   background-position: center;
@@ -1168,14 +1116,27 @@ section {
   -webkit-animation: fade-right-to-left 3s cubic-bezier(0.4, 0, 0.2, 1);
           animation: fade-right-to-left 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .hero__article {
+    width: 768px;
+    height: 255px;
+    background-image: url(https://bondarenkoai.github.io/music-store/images/article-lesson.png);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .hero__article {
+    width: 1264px;
+    height: 255px;
+    background-image: url(https://bondarenkoai.github.io/music-store/images/article-lesson.png);
+  }
+}
 
 .hero__subtitle {
   margin: 0;
   margin-top: 178px;
-  padding-top: 50px;
   margin-bottom: 4px;
   font-weight: 700;
-  font-size: 46px;
+  font-size: 21px;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -1184,129 +1145,14 @@ section {
   width: 550px;
   margin: 0 auto;
   height: 72px;
-  margin-bottom: 16px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 10px;
   line-height: 1.5;
   color: #ffffff;
 }
 
 .hero__btn {
+  width: 103px;
   -webkit-animation: swing 10s ease-in-out infinite forwards;
           animation: swing 10s ease-in-out infinite forwards;
-}
-
-/* Позиціювання */
-/* Блокова модель */
-/* Типографія */
-/* Відображення */
-/* Інше */
-.card-set__pic--position {
-  width: 400px;
-  height: 252px;
-  margin-left: -24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #fbfbfb 0%, #d3d3d3 100%);
-  border-radius: 10px 10px 0px 0px;
-}
-
-.card-set__pic {
-  margin-top: -30px;
-}
-
-/* Позиціювання */
-/* Блокова модель */
-/* Типографія */
-/* Відображення */
-/* Інше */
-.finds {
-  background: #ececec;
-}
-
-.finds-title {
-  margin-bottom: 42px;
-}
-
-.card-set__img {
-  -webkit-transition: -webkit-transform linear 250ms;
-  transition: -webkit-transform linear 250ms;
-  transition: transform linear 250ms;
-  transition: transform linear 250ms, -webkit-transform linear 250ms;
-}
-.card-set__img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-/* Позиціювання */
-/* Блокова модель */
-/* Типографія */
-/* Відображення */
-/* Інше */
-.gear__title {
-  margin-bottom: 48px;
-}
-
-.gear-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.gear-set__item {
-  margin-bottom: 48px;
-  background-color: #252525;
-  border-radius: 10px;
-}
-.gear-set__item:nth-last-child(-n+3) {
-  width: calc((100% - 64px) / 3);
-  margin-right: 32px;
-  margin-bottom: 0;
-}
-.gear-set__item:last-child {
-  margin-right: 0;
-}
-
-.gsi__nomargin {
-  margin-left: 32px;
-}
-
-.gear-set__item--mode-light {
-  background-color: #eaeaea;
-}
-
-.gear-set__content {
-  padding: 32px;
-}
-
-.gear-set__title {
-  margin: 0;
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.3;
-  color: #ffffff;
-}
-
-.gear-set__title--mode-dark {
-  color: #202020;
-}
-
-.gear-set__subtitle {
-  margin: 0;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.3;
-  color: #c4c4c4;
-}
-
-.gear-set__subtitle--mode-light {
-  color: #767676;
 }/*# sourceMappingURL=main.css.map */

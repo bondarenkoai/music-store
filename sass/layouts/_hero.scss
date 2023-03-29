@@ -11,7 +11,8 @@
 
 .hero__title {
     font-weight: 700;
-    font-size: 56px;
+    font-size: 21px;
+    // font-size: 56px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: $bg-color;
@@ -26,12 +27,13 @@
 
 .hero__article {
     text-align: center;
-    width: 1264px;
-    height: 255px;
-    // margin-left: -18px;
 
-    // background: $btn-color;
-    background-image: url(https://bondarenkoai.github.io/music-store/images/article-lesson.png);
+    width: 328px;
+    height: 168px;
+
+    background: $btn-color;
+    background-image: url(/images/article-lesson-mq-mobile.png);
+
     background-repeat: no-repeat;
     background-size: initial;
     background-position: center;
@@ -41,6 +43,20 @@
     border-radius: 10px;
 
     animation: fade-right-to-left 3s $cubic;
+
+    @include media(tablet) {
+        width: 768px;
+        height: 255px;
+
+        background-image: url(https://bondarenkoai.github.io/music-store/images/article-lesson.png);
+    }
+
+    @include media(desktop) {
+        width: 1264px;
+        height: 255px;
+
+        background-image: url(https://bondarenkoai.github.io/music-store/images/article-lesson.png);
+    }
 }
 
 // .hero__article {
@@ -72,11 +88,13 @@
 .hero__subtitle {
     margin: 0;
     margin-top: 178px;
-    padding-top: 50px;
+    // padding-top: 50px;
     margin-bottom: 4px;
 
     font-weight: 700;
-    font-size: 46px;
+    font-size: 21px;
+
+    // font-size: 46px;
     line-height: 1.2;
     color: $bg-color;
 }
@@ -85,14 +103,18 @@
     width: 550px;
     margin: 0 auto;
     height: 72px;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
 
     font-weight: 600;
-    font-size: 24px;
+    font-size: 10px;
+
+    // font-size: 24px;
     line-height: 1.5;
     color: $bg-color;
 }
 
 .hero__btn {
+    width: 103px;
+
     animation: swing 10s ease-in-out infinite forwards;
 }
