@@ -5,22 +5,35 @@
 /* Інше */
 
 .hero {
-    padding-top: 178px;
+    // width: 328px;
+
+    padding-top: 0;
     padding-bottom: 0px;
+    color: $bg-color;
 }
 
 .hero__title {
-    font-weight: 700;
-    font-size: 21px;
-    // font-size: 56px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: $bg-color;
-
-    width: 577px;
-    height: 201px;
+    width: 267px;
+    padding: 110px 0;
+    @include fonts(700, 32, 38, normal);
 
     animation: fade-left-to-right 2s;
+
+    @include media(mobile-only) {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    @include media(tablet) {
+        width: 500px;
+        padding: 180px 0;
+        @include fonts(700, 56, 67, 0.02em);
+    }
+
+    @include media(desktop) {
+        width: 577px;
+        @include fonts(700, 56, 67, 0.02em);
+    }
 }
 
 // Git tests
@@ -29,7 +42,6 @@
     margin: 0 auto;
     width: 328px;
     height: 168px;
-    color: $bg-color;
     text-align: center;
 
     background: $btn-color;
@@ -46,6 +58,7 @@
     animation: fade-right-to-left 3s $cubic;
 
     @include media(tablet) {
+        margin: 0 -18px;
         width: 768px;
         height: 208px;
 
@@ -53,6 +66,7 @@
     }
 
     @include media(desktop) {
+        margin: 0 auto;
         width: 1264px;
         height: 255px;
 
@@ -119,7 +133,6 @@
 }
 
 .hero__btn {
-    width: 103px;
-
+    // width: 103px;
     animation: swing 10s ease-in-out infinite forwards;
 }

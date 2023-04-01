@@ -481,8 +481,8 @@ section {
 }
 @media screen and (min-width: 768px) {
   .header-bgimage {
-    width: 768px;
-    height: 808px;
+    width: 1200px;
+    height: 770px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
     background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
   }
@@ -500,9 +500,6 @@ section {
   padding-top: 56px;
 }
 
-.nav {
-  display: none;
-}
 @media screen and (min-width: 1300px) {
   .nav {
     display: -webkit-box;
@@ -515,10 +512,15 @@ section {
 }
 
 .site-nav {
+  display: none;
   margin-left: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+@media screen and (min-width: 1300px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .auth-nav {
@@ -569,6 +571,17 @@ section {
 
 .current {
   color: #ff753a;
+}
+
+.auth-nav {
+  display: none;
+}
+@media screen and (min-width: 1300px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .auth-nav__item {
@@ -635,6 +648,12 @@ section {
 .logo__img:hover, .logo__img:focus {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+@media screen and (max-width: 767.98px) {
+  .logo__img {
+    width: 153px;
+    height: 24px;
+  }
 }
 
 .backdrop {

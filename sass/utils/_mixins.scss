@@ -84,9 +84,10 @@
         line-height: $lh / $fs;
     }
 
-    @if $ls==normal {
-        letter-spacing: normal;
-    } @else {
-        letter-spacing: #{$ls / $fs}em;
-    }
+    letter-spacing: $ls;
+    // @if $ls==normal {
+    //     letter-spacing: normal;
+    // } @else {
+    //     letter-spacing: #{$ls / $fs}em;
+    // }
 }
