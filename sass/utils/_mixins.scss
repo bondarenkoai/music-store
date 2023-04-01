@@ -55,3 +55,38 @@
         }
     }
 }
+
+@mixin fade($type) {
+    @if $type== "hide" {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 1s, opacity 1s;
+    } @else if $type== "show" {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 1s, opacity 1s;
+    }
+}
+
+@mixin cover-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin fonts($fw: 400, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs * 1px;
+
+    @if $lh==normal {
+        line-height: normal;
+    } @else {
+        line-height: $lh / $fs;
+    }
+
+    @if $ls==normal {
+        letter-spacing: normal;
+    } @else {
+        letter-spacing: #{$ls / $fs}em;
+    }
+}
