@@ -4,9 +4,9 @@
 }
 
 .card-set__item {
-    width: 400px;
-
-    // outline: 2px solid $color-25;
+    width: 339px;
+    margin-bottom: 34px;
+    outline: 2px solid red;
 
     border-radius: 10px;
     background-color: $bg-color;
@@ -14,8 +14,19 @@
     filter: drop-shadow(0px 2px 4px rgba(28, 5, 77, 0.1))
         drop-shadow(0px 12px 32px rgba(0, 0, 0, 0.05));
 
-    &:not(:last-child) {
-        margin-right: 32px;
+    @include media(mobile-only) {
+        
+    }
+
+    @include media(tablet) {
+        &:nth-child(2n-1) {
+            margin-right: 32px;
+        }
+    }
+
+    @include media(desktop) {
+        width: 400px;
+        margin-bottom: 0;
     }
 }
 

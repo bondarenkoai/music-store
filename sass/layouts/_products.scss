@@ -8,7 +8,7 @@
 }
 
 .card-set__pic--position {
-    width: 400px;
+    width: 339px;
     height: 252px;
     margin-left: -24px;
 
@@ -21,6 +21,15 @@
         #d3d3d3 100%
     );
     border-radius: 10px 10px 0px 0px;
+
+    @include media(tablet) {
+        
+    }
+
+    @include media(desktop) {
+        width: 400px;
+        margin-left: -24px;
+    }
 }
 
 .card-set__pic {

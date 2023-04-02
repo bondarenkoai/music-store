@@ -44,12 +44,8 @@ section {
 
     margin-bottom: 42px;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2;
+    @include fonts(700, 24, 31, normal);
     text-align: center;
-    /* #505050 */
     color: $text-color;
 
     &::before {
@@ -59,12 +55,18 @@ section {
         width: 80px;
         height: 3px;
         background-color: $red-line;
+
+        @include media(mobile-only) {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 
     @include media(tablet) {
         display: flex;
         justify-content: center;
 
-        font-size: 40px;
+        @include fonts(700, 40, 48, normal);
     }
 }
