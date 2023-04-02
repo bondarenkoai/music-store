@@ -4,6 +4,14 @@
 /* Відображення */
 /* Інше */
 
+// .a{
+//     width: 616px;
+//     height: 487px;
+
+//     width: 400px;
+//     height: 480px;
+// }
+
 .gear {
 }
 
@@ -21,24 +29,38 @@
     background-color: $color-25;
     // outline: 2px solid red;
     border-radius: 10px;
-    
-    &:nth-last-child(-n + 3) {
-        width: calc((100% - 64px) / 3);
-        margin-right: 32px;
-        margin-bottom: 0;
-    }
-    
+
     &:last-child {
         margin-right: 0;
     }
+
+    @include media(mobile-only) {
+        width: 339px;
+    }
+
+    @include media(desktop) {
+        &:nth-last-child(-n + 3) {
+            width: calc((100% - 64px) / 3);
+            margin-right: 32px;
+            margin-bottom: 0;
+        }
+    }
 }
 
+.gear-set__link {
+}
+
+.gear-set__img {
+    size: inherit;
+}
 
 .gsi__nomargin {
-    margin-left: 32px;
+    @include media(desktop) {
+        margin-left: 32px;
+    }
 }
 
-.gear-set__item--mode-light  {
+.gear-set__item--mode-light {
     background-color: #eaeaea;
 }
 
