@@ -3,7 +3,7 @@
 }
 
 .contact-left {
-    width: 50%;
+    width: 100%;
     padding: 50px;
 
     background: rgb(3, 53, 106);
@@ -15,6 +15,10 @@
 
     color: $bg-color;
     border-radius: 13px 0 0 13px;
+
+    @include media(tablet) {
+        width: 50%;
+    }
 }
 
 .modal-form {

@@ -25,11 +25,19 @@
 
     display: flex;
 
-    width: 1000px;
+    width: 375px;
     min-height: 300px;
 
     opacity: 1;
 
     background-color: #fff;
     border-radius: 15px;
+
+    @include media(tablet) {
+        width: 768px;
+    }
+
+    @include media(desktop) {
+        width: 1000px;
+    }
 }

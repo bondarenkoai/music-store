@@ -607,11 +607,21 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1000px;
+  width: 375px;
   min-height: 300px;
   opacity: 1;
   background-color: #fff;
   border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+  .modal-wrapper {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .modal-wrapper {
+    width: 1000px;
+  }
 }
 
 .contact-left__title {
@@ -619,12 +629,17 @@ summary {
 }
 
 .contact-left {
-  width: 50%;
+  width: 100%;
   padding: 50px;
   background: rgb(3, 53, 106);
   background: linear-gradient(135deg, rgba(10, 23, 36, 0.9) 0%, rgba(3, 53, 106, 0.9) 38%);
   color: #ffffff;
   border-radius: 13px 0 0 13px;
+}
+@media screen and (min-width: 768px) {
+  .contact-left {
+    width: 50%;
+  }
 }
 
 .modal-form__group {
@@ -828,6 +843,11 @@ summary {
   padding: 50px;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 767.98px) {
+  .contact-right {
+    display: none;
+  }
+}
 
 .contact-right__title {
   position: relative;
@@ -920,7 +940,6 @@ summary {
 }
 
 .footer {
-  min-width: 1300px;
   background-color: #505050;
   padding-top: 69px;
   color: white;
@@ -935,9 +954,28 @@ summary {
           align-items: center;
   padding-bottom: 52px;
 }
+@media screen and (max-width: 767.98px) {
+  .footer-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .footer-nav__account {
   margin-right: 48px;
+}
+@media screen and (max-width: 767.98px) {
+  .footer-nav__account {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+  }
 }
 
 .footer-nav__item {
@@ -971,8 +1009,25 @@ summary {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer-nav__store {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer__logo--none {
+    display: none;
+  }
+}
+
 .foooter-contact {
   margin-left: auto;
+}
+@media screen and (max-width: 767.98px) {
+  .foooter-contact {
+    margin: 0 auto;
+  }
 }
 
 .contact-social__list {
@@ -983,6 +1038,11 @@ summary {
       -ms-flex-pack: right;
           justify-content: right;
   margin-top: 20px;
+}
+@media screen and (max-width: 767.98px) {
+  .contact-social__list {
+    margin-top: 32px;
+  }
 }
 
 .contact-social__link {
@@ -1020,6 +1080,11 @@ summary {
   font-family: "Montserrat";
   font-size: 12.8px;
   line-height: 1.4;
+}
+@media screen and (max-width: 767.98px) {
+  .foooter-copyright__text {
+    text-align: center;
+  }
 }
 
 .guitars-header {
