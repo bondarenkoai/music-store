@@ -78,43 +78,81 @@
                         <h2 class="form-login__title">Welcome Back</h2>
                         <form class="form-login" name="form-login">
                             <label class="form-login__group">
-                                <input class="form-login__input" type="text" name="user-name" placeholder="your name..">
+                                <input class="form-login__input" type="email" name="user-mail" placeholder="email@..">
+                                <span class="form-login__label">Email Address</span>
+                            </label>
+
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="password" name="user-name"
+                                    placeholder="your password..">
+                                <span class="form-login__label">Password</span>
+                            </label>
+                        </form>
+
+                        <button class="button form-login__btn ">Login</button>
+
+                        <p class="form-login__text">Don't have an account yet?
+                            <a role="button">
+                                <b data-modal-login-close data-modal-signup-open>Sign up</b>
+                            </a>
+                        </p>
+                        <p class="form-login__desc"> or </p>
+                        <p class="form-login__link">login with <a href="https://www.facebook.com/login.php/"
+                                target="_blank">facebook</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backdrop /// +"_backdrop--signup.scss"  -->
+
+        <div class="backdrop__signup is-hidden" data-modal-signup>
+            <div class="modal-wrapper--signup">
+                <div class="modal-wrapper--blur"></div>
+                <div class="modal-wrapper--content">
+
+                    <button class="modal-btn" data-modal-signup-close>
+                        <svg width="20" height="20">
+                            <use href="./images/icons.svg#close"></use>
+                        </svg>
+                    </button>
+
+
+
+                    <div class="modal-form--login">
+                        <div href="./index.html" class="logo form-login__logo">
+                            <img src="./images/logo.svg" alt="logo" class="logo__img" />
+                        </div>
+                        <h2 class="form-login__title">Sign Up</h2>
+                        <form class="form-login" name="form-login">
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="name" name="user-name" placeholder="your name..">
                                 <span class="form-login__label">Name</span>
                             </label>
                             <label class="form-login__group">
-                                <input class="form-login__input" type="tel" name="user-phone" placeholder="+1-234..">
-                                <span class="form-login__label">Phone</span>
+                                <input class="form-login__input" type="email" name="user-mail" placeholder="email@..">
+                                <span class="form-login__label">Email Address</span>
                             </label>
                             <label class="form-login__group">
-                                <input class="form-login__input" type="email" name="user-mail" placeholder="email@..">
-                                <span class="form-login__label">Email</span>
+                                <input class="form-login__input" type="password" name="user-name"
+                                    placeholder="your password..">
+                                <span class="form-login__label">Password</span>
                             </label>
-
-                            <label class="form-login__group form-login__checkbox">
-                                <input class="form-login__checkbox visually-hidden" type="checkbox">
-                                <span class="form-login__custom-checkbox">
-                                    <svg class="form-login__custom-checkbox-icon" width="15" height="15">
-                                        <use href="./images/icons.svg#check"></use>
-                                    </svg>
-                                </span>
-                                <span class="form-login__policy-desc form-login__label">I agree to the processing of
-                                    personal data</span>
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="password" name="user-name"
+                                    placeholder="your password..">
+                                <span class="form-login__label">Retype Password</span>
                             </label>
-
-
                         </form>
 
+                        <button class="button form-login__btn ">Sign Up</button>
 
-                        <button class="button">Login</button>
-
-
+                        <p class="form-login__desc"> or </p>
+                        <p class="form-login__link">login with <a href="https://www.facebook.com/login.php/"
+                                target="_blank">facebook</a></p>
                     </div>
                 </div>
-
-
-
             </div>
-
         </div>
 
     </header>

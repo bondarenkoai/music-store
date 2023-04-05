@@ -11,7 +11,7 @@
 
 .modal-form--login {
     width: 350px;
-    padding: 30px;
+    padding: 50px 30px;
 
     color: $bg-color;
 }
@@ -27,11 +27,9 @@
     color: $bg-color-2;
 
     @include media(tablet) {
-        padding-bottom: 20px;
     }
 
     @include media(desktop) {
-        padding-bottom: 30px;
     }
 }
 
@@ -73,34 +71,6 @@
     transform: translateY(-25px);
 }
 
-.form-login__checkbox {
-    display: flex;
-    align-items: center;
-}
-
-.form-login__custom-checkbox {
-    width: 20px;
-    height: 20px;
-    @include centeredFlex();
-
-    background-color: $bg-color;
-    border-radius: 4px;
-    outline: 2px solid $bg-color-2;
-    outline-offset: -2px;
-}
-
-.form-login__custom-checkbox-icon {
-    opacity: 0;
-    transition: opacity 200ms ease-in;
-}
-
-.form-login__checkbox:checked
-    + .form-login__custom-checkbox
-    .form-login__custom-checkbox-icon {
-    opacity: 1;
-    transition: opacity 200ms ease-in;
-}
-
 .form-login__policy-desc {
     padding-left: 30px;
     margin-top: -4px;
@@ -111,13 +81,43 @@
     }
 }
 
-.form-login__group:last-child {
+.form-login__btn {
+    background-color: transparent;
+    border: 2px solid $btn-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-25;
+        background-color: rgb(221, 235, 255);
+    }
+}
+
+.form-login__text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-login__desc {
     display: flex;
     align-items: center;
-    width: 240px;
-    padding-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
 
-    @include media(desktop) {
-        width: 100%;
+    &::before,
+    &::after {
+        content: "";
+        margin: 0 15px;
+        margin-bottom: -3px;
+
+        width: 200px;
+        height: 2px;
+        background-color: $p-color;
     }
+}
+
+.form-login__link{
+     text-align: center;
 }
