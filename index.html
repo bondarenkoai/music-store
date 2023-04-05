@@ -42,19 +42,70 @@
                 </li>
             </ul>
             <ul class="auth-nav">
-                <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="24"
-                            height="24">
-                            <use href="./images/icons.svg#buy"></use>
-                        </svg>
-                    </a>
+                <li class="auth-nav__item">
+                    <svg class="auth-nav__icon" width="24" height="24">
+                        <use href="./images/icons.svg#buy"></use>
+                    </svg>
                 </li>
-                <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="24"
-                            height="24">
-                            <use href="./images/icons.svg#account"></use>
-                        </svg>
-                    </a></li>
+                <li class="auth-nav__item" data-modal-login-open>
+                    <svg class="auth-nav__icon" width="24" height="24">
+                        <use href="./images/icons.svg#account"></use>
+                    </svg>
+                </li>
             </ul>
         </nav>
+
+
+        <!-- Backdrop /// +"_backdrop__login.scss"  -->
+
+        <div class="backdrop is-hidden" data-modal-login>
+            <div class="modal-wrapper">
+                <button class="modal-btn" data-modal-login-close>
+                    <svg width="20" height="20">
+                        <use href="./images/icons.svg#close"></use>
+                    </svg>
+                </button>
+
+                <div class="contact-left">
+                    <h2 class="contact-left__title">Send us a message</h2>
+                    <form class="modal-form" name="modal-form">
+                        <label class="modal-form__group">
+                            <input class="modal-form__input" type="text" name="user-name" placeholder="your name..">
+                            <span class="modal-form__label">Name</span>
+                        </label>
+                        <label class="modal-form__group">
+                            <input class="modal-form__input" type="tel" name="user-phone" placeholder="+1-234..">
+                            <span class="modal-form__label">Phone</span>
+                        </label>
+                        <label class="modal-form__group">
+                            <input class="modal-form__input" type="email" name="user-mail" placeholder="email@..">
+                            <span class="modal-form__label">Email</span>
+                        </label>
+                        <label class="modal-form__group">
+                            <textarea class="modal-form__textarea" name="message" cols="30" rows="5"
+                                placeholder="write your message.."></textarea>
+                            <span class="modal-form__label">Message</span>
+                        </label>
+                        <label class="modal-form__group modal-form__checkbox">
+                            <input class="modal-form__checkbox visually-hidden" type="checkbox">
+                            <span class="modal-form__custom-checkbox">
+                                <svg class="modal-form__custom-checkbox-icon" width="15" height="15">
+                                    <use href="./images/icons.svg#check"></use>
+                                </svg>
+                            </span>
+                            <span class="modal-form__policy-desc modal-form__label">I agree to the processing of
+                                personal data</span>
+                        </label>
+
+
+                    </form>
+
+
+                    <button class="button">Send</button>
+
+                </div>
+            </div>
+        </div>
 
     </header>
     <main>
@@ -84,7 +135,11 @@
 
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal-wrapper">
-
+                    <button class="modal-btn" data-modal-close>
+                        <svg width="20" height="20">
+                            <use href="./images/icons.svg#close"></use>
+                        </svg>
+                    </button>
 
                     <div class="contact-left">
                         <h2 class="contact-left__title">Send us a message</h2>
@@ -121,7 +176,7 @@
                         </form>
 
 
-                        <button class="button" data-modal-close>Send</button>
+                        <button class="button">Send</button>
 
                     </div>
 
