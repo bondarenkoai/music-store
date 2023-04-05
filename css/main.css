@@ -663,7 +663,7 @@ section {
   }
 }
 
-.backdrop {
+.backdrop__login {
   position: fixed;
   top: 0;
   left: 0;
@@ -675,13 +675,7 @@ section {
   z-index: 10;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.modal-wrapper {
+.modal-wrapper--login {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -690,21 +684,29 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 355px;
+  width: 350px;
   min-height: 300px;
   opacity: 1;
-  background-color: #fff;
-  border-radius: 15px;
 }
 @media screen and (min-width: 768px) {
-  .modal-wrapper {
-    width: 748px;
+  .modal-wrapper--login {
+    width: 500px;
   }
 }
-@media screen and (min-width: 1300px) {
-  .modal-wrapper {
-    width: 1000px;
-  }
+
+.modal-wrapper--blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(82, 93, 105, 0.9) 0%, rgba(52, 61, 72, 0.9) 38%);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 20;
+}
+
+.modal-wrapper--content {
+  margin: 0 auto;
+  z-index: 30;
 }
 
 .modal-btn {
@@ -728,53 +730,50 @@ section {
   background-color: transparent;
 }
 
-.contact-left__title {
+.form-login__logo {
+  margin-left: 15px;
   margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.form-login__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.0588235294;
+  letter-spacing: normal;
 }
 @media screen and (min-width: 768px) {
-  .contact-left__title {
+  .form-login__title {
     margin-bottom: 60px;
   }
 }
 
-.contact-left {
-  width: 100%;
+.modal-form--login {
+  width: 350px;
   padding: 30px;
-  background: rgb(3, 53, 106);
-  background: linear-gradient(135deg, rgba(10, 23, 36, 0.9) 0%, rgba(3, 53, 106, 0.9) 38%);
   color: #ffffff;
-  border-radius: 13px 0 0 13px;
-}
-@media screen and (min-width: 768px) {
-  .contact-left {
-    width: 50%;
-    padding: 40px;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .contact-left {
-    padding: 50px;
-  }
 }
 
-.modal-form__group {
+.form-login__group {
   position: relative;
   display: block;
   padding-bottom: 10px;
   color: #ececec;
 }
 @media screen and (min-width: 768px) {
-  .modal-form__group {
+  .form-login__group {
     padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 1300px) {
-  .modal-form__group {
+  .form-login__group {
     padding-bottom: 30px;
   }
 }
 
-.modal-form__group .modal-form__label {
+.form-login__group .form-login__label {
   position: absolute;
   top: -5px;
   left: 0;
@@ -782,14 +781,14 @@ section {
   transition: all 400ms ease;
 }
 
-.modal-form__label {
+.form-login__label {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.3125;
   letter-spacing: normal;
 }
 
-.modal-form__input {
+.form-login__input {
   margin-bottom: 40px;
   width: 100%;
   padding: 3px;
@@ -799,128 +798,62 @@ section {
   border: none;
   border-bottom: 1px solid #ececec;
 }
-.modal-form__input::-webkit-input-placeholder {
+.form-login__input::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in;
   transition: opacity 300ms ease-in;
 }
-.modal-form__input::-moz-placeholder {
+.form-login__input::-moz-placeholder {
   opacity: 0;
   -moz-transition: opacity 300ms ease-in;
   transition: opacity 300ms ease-in;
 }
-.modal-form__input:-ms-input-placeholder {
+.form-login__input:-ms-input-placeholder {
   opacity: 0;
   -ms-transition: opacity 300ms ease-in;
   transition: opacity 300ms ease-in;
 }
-.modal-form__input::-ms-input-placeholder {
+.form-login__input::-ms-input-placeholder {
   opacity: 0;
   -ms-transition: opacity 300ms ease-in;
   transition: opacity 300ms ease-in;
 }
-.modal-form__input::placeholder {
+.form-login__input::placeholder {
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in;
   transition: opacity 300ms ease-in;
 }
-.modal-form__input:focus::-webkit-input-placeholder {
+.form-login__input:focus::-webkit-input-placeholder {
   opacity: 1;
 }
-.modal-form__input:focus::-moz-placeholder {
+.form-login__input:focus::-moz-placeholder {
   opacity: 1;
 }
-.modal-form__input:focus:-ms-input-placeholder {
+.form-login__input:focus:-ms-input-placeholder {
   opacity: 1;
 }
-.modal-form__input:focus::-ms-input-placeholder {
+.form-login__input:focus::-ms-input-placeholder {
   opacity: 1;
 }
-.modal-form__input:focus::placeholder {
+.form-login__input:focus::placeholder {
   opacity: 1;
 }
 
-.modal-form__input:not(:-moz-placeholder-shown) + .modal-form__label {
+.form-login__input:not(:-moz-placeholder-shown) + .form-login__label {
   transform: translateY(-25px);
 }
 
-.modal-form__input:not(:-ms-input-placeholder) + .modal-form__label {
+.form-login__input:not(:-ms-input-placeholder) + .form-login__label {
   transform: translateY(-25px);
 }
 
-.modal-form__input:focus + .modal-form__label,
-.modal-form__input:not(:placeholder-shown) + .modal-form__label {
+.form-login__input:focus + .form-login__label,
+.form-login__input:not(:placeholder-shown) + .form-login__label {
   -webkit-transform: translateY(-25px);
           transform: translateY(-25px);
 }
 
-.modal-form__textarea {
-  margin-bottom: 20px;
-  min-width: 100%;
-  resize: none;
-  padding: 3px;
-  outline: transparent;
-  color: #ececec;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #ececec;
-}
-.modal-form__textarea::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-.modal-form__textarea::-moz-placeholder {
-  opacity: 0;
-  -moz-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-.modal-form__textarea:-ms-input-placeholder {
-  opacity: 0;
-  -ms-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-.modal-form__textarea::-ms-input-placeholder {
-  opacity: 0;
-  -ms-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-.modal-form__textarea::placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-.modal-form__textarea:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-.modal-form__textarea:focus::-moz-placeholder {
-  opacity: 1;
-}
-.modal-form__textarea:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-.modal-form__textarea:focus::-ms-input-placeholder {
-  opacity: 1;
-}
-.modal-form__textarea:focus::placeholder {
-  opacity: 1;
-}
-
-.modal-form__textarea:not(:-moz-placeholder-shown) + .modal-form__label {
-  transform: translateY(-25px);
-}
-
-.modal-form__textarea:not(:-ms-input-placeholder) + .modal-form__label {
-  transform: translateY(-25px);
-}
-
-.modal-form__textarea:focus + .modal-form__label,
-.modal-form__textarea:not(:placeholder-shown) + .modal-form__label {
-  -webkit-transform: translateY(-25px);
-          transform: translateY(-25px);
-}
-
-.modal-form__checkbox {
+.form-login__checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -929,7 +862,7 @@ section {
           align-items: center;
 }
 
-.modal-form__custom-checkbox {
+.form-login__custom-checkbox {
   width: 20px;
   height: 20px;
   display: -webkit-box;
@@ -947,30 +880,30 @@ section {
   outline-offset: -2px;
 }
 
-.modal-form__custom-checkbox-icon {
+.form-login__custom-checkbox-icon {
   opacity: 0;
   -webkit-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
 }
 
-.modal-form__checkbox:checked + .modal-form__custom-checkbox .modal-form__custom-checkbox-icon {
+.form-login__checkbox:checked + .form-login__custom-checkbox .form-login__custom-checkbox-icon {
   opacity: 1;
   -webkit-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
 }
 
-.modal-form__policy-desc {
+.form-login__policy-desc {
   padding-left: 30px;
   margin-top: -4px;
 }
 @media screen and (min-width: 1300px) {
-  .modal-form__policy-desc {
+  .form-login__policy-desc {
     margin-top: 0;
     padding-top: 6px;
   }
 }
 
-.modal-form__group:last-child {
+.form-login__group:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,7 +914,7 @@ section {
   padding-bottom: 30px;
 }
 @media screen and (min-width: 1300px) {
-  .modal-form__group:last-child {
+  .form-login__group:last-child {
     width: 100%;
   }
 }

@@ -58,53 +58,63 @@
 
         <!-- Backdrop /// +"_backdrop__login.scss"  -->
 
-        <div class="backdrop is-hidden" data-modal-login>
-            <div class="modal-wrapper">
-                <button class="modal-btn" data-modal-login-close>
-                    <svg width="20" height="20">
-                        <use href="./images/icons.svg#close"></use>
-                    </svg>
-                </button>
+        <div class="backdrop__login is-hidden" data-modal-login>
+            <div class="modal-wrapper--login">
+                <div class="modal-wrapper--blur"></div>
+                <div class="modal-wrapper--content">
 
-                <div class="contact-left">
-                    <h2 class="contact-left__title">Send us a message</h2>
-                    <form class="modal-form" name="modal-form">
-                        <label class="modal-form__group">
-                            <input class="modal-form__input" type="text" name="user-name" placeholder="your name..">
-                            <span class="modal-form__label">Name</span>
-                        </label>
-                        <label class="modal-form__group">
-                            <input class="modal-form__input" type="tel" name="user-phone" placeholder="+1-234..">
-                            <span class="modal-form__label">Phone</span>
-                        </label>
-                        <label class="modal-form__group">
-                            <input class="modal-form__input" type="email" name="user-mail" placeholder="email@..">
-                            <span class="modal-form__label">Email</span>
-                        </label>
-                        <label class="modal-form__group">
-                            <textarea class="modal-form__textarea" name="message" cols="30" rows="5"
-                                placeholder="write your message.."></textarea>
-                            <span class="modal-form__label">Message</span>
-                        </label>
-                        <label class="modal-form__group modal-form__checkbox">
-                            <input class="modal-form__checkbox visually-hidden" type="checkbox">
-                            <span class="modal-form__custom-checkbox">
-                                <svg class="modal-form__custom-checkbox-icon" width="15" height="15">
-                                    <use href="./images/icons.svg#check"></use>
-                                </svg>
-                            </span>
-                            <span class="modal-form__policy-desc modal-form__label">I agree to the processing of
-                                personal data</span>
-                        </label>
+                    <button class="modal-btn" data-modal-login-close>
+                        <svg width="20" height="20">
+                            <use href="./images/icons.svg#close"></use>
+                        </svg>
+                    </button>
 
 
-                    </form>
+
+                    <div class="modal-form--login">
+                        <div href="./index.html" class="logo form-login__logo">
+                            <img src="./images/logo.svg" alt="logo" class="logo__img" />
+                        </div>
+                        <h2 class="form-login__title">Welcome Back</h2>
+                        <form class="form-login" name="form-login">
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="text" name="user-name" placeholder="your name..">
+                                <span class="form-login__label">Name</span>
+                            </label>
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="tel" name="user-phone" placeholder="+1-234..">
+                                <span class="form-login__label">Phone</span>
+                            </label>
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="email" name="user-mail" placeholder="email@..">
+                                <span class="form-login__label">Email</span>
+                            </label>
+
+                            <label class="form-login__group form-login__checkbox">
+                                <input class="form-login__checkbox visually-hidden" type="checkbox">
+                                <span class="form-login__custom-checkbox">
+                                    <svg class="form-login__custom-checkbox-icon" width="15" height="15">
+                                        <use href="./images/icons.svg#check"></use>
+                                    </svg>
+                                </span>
+                                <span class="form-login__policy-desc form-login__label">I agree to the processing of
+                                    personal data</span>
+                            </label>
 
 
-                    <button class="button">Send</button>
+                        </form>
 
+
+                        <button class="button">Login</button>
+
+
+                    </div>
                 </div>
+
+
+
             </div>
+
         </div>
 
     </header>
@@ -129,101 +139,103 @@
                 <button class="button hero__btn" type="hero__btn" data-modal-open>LEARN
                     MORE</button>
 
-            </article>
 
-            <!-- Backdrop /// +"_backdrop.scss"  -->
+                <!-- Backdrop /// +"_backdrop.scss"  -->
 
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal-wrapper">
-                    <button class="modal-btn" data-modal-close>
-                        <svg width="20" height="20">
-                            <use href="./images/icons.svg#close"></use>
-                        </svg>
-                    </button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal-wrapper">
+                        <button class="modal-btn" data-modal-close>
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#close"></use>
+                            </svg>
+                        </button>
 
-                    <div class="contact-left">
-                        <h2 class="contact-left__title">Send us a message</h2>
-                        <form class="modal-form" name="modal-form">
-                            <label class="modal-form__group">
-                                <input class="modal-form__input" type="text" name="user-name" placeholder="your name..">
-                                <span class="modal-form__label">Name</span>
-                            </label>
-                            <label class="modal-form__group">
-                                <input class="modal-form__input" type="tel" name="user-phone" placeholder="+1-234..">
-                                <span class="modal-form__label">Phone</span>
-                            </label>
-                            <label class="modal-form__group">
-                                <input class="modal-form__input" type="email" name="user-mail" placeholder="email@..">
-                                <span class="modal-form__label">Email</span>
-                            </label>
-                            <label class="modal-form__group">
-                                <textarea class="modal-form__textarea" name="message" cols="30" rows="5"
-                                    placeholder="write your message.."></textarea>
-                                <span class="modal-form__label">Message</span>
-                            </label>
-                            <label class="modal-form__group modal-form__checkbox">
-                                <input class="modal-form__checkbox visually-hidden" type="checkbox">
-                                <span class="modal-form__custom-checkbox">
-                                    <svg class="modal-form__custom-checkbox-icon" width="15" height="15">
-                                        <use href="./images/icons.svg#check"></use>
+                        <div class="contact-left">
+                            <h2 class="contact-left__title">Send us a message</h2>
+                            <form class="modal-form" name="modal-form">
+                                <label class="modal-form__group">
+                                    <input class="modal-form__input" type="text" name="user-name"
+                                        placeholder="your name..">
+                                    <span class="modal-form__label">Name</span>
+                                </label>
+                                <label class="modal-form__group">
+                                    <input class="modal-form__input" type="tel" name="user-phone"
+                                        placeholder="+1-234..">
+                                    <span class="modal-form__label">Phone</span>
+                                </label>
+                                <label class="modal-form__group">
+                                    <input class="modal-form__input" type="email" name="user-mail"
+                                        placeholder="email@..">
+                                    <span class="modal-form__label">Email</span>
+                                </label>
+                                <label class="modal-form__group">
+                                    <textarea class="modal-form__textarea" name="message" cols="30" rows="5"
+                                        placeholder="write your message.."></textarea>
+                                    <span class="modal-form__label">Message</span>
+                                </label>
+                                <label class="modal-form__group modal-form__checkbox">
+                                    <input class="modal-form__checkbox visually-hidden" type="checkbox">
+                                    <span class="modal-form__custom-checkbox">
+                                        <svg class="modal-form__custom-checkbox-icon" width="15" height="15">
+                                            <use href="./images/icons.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="modal-form__policy-desc modal-form__label">I agree to the processing of
+                                        personal data</span>
+                                </label>
+
+
+                            </form>
+
+
+                            <button class="button">Send</button>
+
+                        </div>
+
+                        <div class="contact-right">
+                            <h2 class="contact-right__title">Contact us</h2>
+                            <p class="contact-right__subtitle">We're op en for any suggestion or just to have a chat</p>
+                            <div class="contact-group">
+                                <span class="contact-group__icon">
+                                    <svg class="contact-group__faicon" width="15" height="15">
+                                        <use href="./images/icons.svg#location"></use>
                                     </svg>
                                 </span>
-                                <span class="modal-form__policy-desc modal-form__label">I agree to the processing of
-                                    personal data</span>
-                            </label>
-
-
-                        </form>
-
-
-                        <button class="button">Send</button>
+                                <p class="contact-group__text"><b>Address : </b><a class="contact-group__link"
+                                        href="https://goo.gl/maps/p9w6qvtk8zfSsdNc8" target="_blank">807 5th Ave, New
+                                        York, NY 10065, USA</a> </p>
+                            </div>
+                            <div class="contact-group">
+                                <span class="contact-group__icon">
+                                    <svg class="contact-group__faicon" width="15" height="15">
+                                        <use href="./images/icons.svg#phone"></use>
+                                    </svg>
+                                </span>
+                                <p class="contact-group__text"><b>Phone : </b><a class="contact-group__link"
+                                        href="tel:+1233 4556 77">+1233 4556 77</a></p>
+                            </div>
+                            <div class="contact-group">
+                                <span class="contact-group__icon">
+                                    <svg class="contact-group__faicon" width="15" height="15">
+                                        <use href="./images/icons.svg#email"></use>
+                                    </svg>
+                                </span>
+                                <p class="contact-group__text"><b>Email : </b><a class="contact-group__link"
+                                        href="mailto:info@site.com">info@site.com</a></p>
+                            </div>
+                            <div class="contact-group">
+                                <span class="contact-group__icon">
+                                    <svg class="contact-group__faicon" width="15" height="15">
+                                        <use href="./images/icons.svg#earth"></use>
+                                    </svg>
+                                </span>
+                                <p class="contact-group__text"><b>Website : </b><a class="contact-group__link"
+                                        href="/index.html" target="_blank">www.web-guitars.com</a></p>
+                            </div>
+                        </div>
 
                     </div>
-
-                    <div class="contact-right">
-                        <h2 class="contact-right__title">Contact us</h2>
-                        <p class="contact-right__subtitle">We're op en for any suggestion or just to have a chat</p>
-                        <div class="contact-group">
-                            <span class="contact-group__icon">
-                                <svg class="contact-group__faicon" width="15" height="15">
-                                    <use href="./images/icons.svg#location"></use>
-                                </svg>
-                            </span>
-                            <p class="contact-group__text"><b>Address : </b><a class="contact-group__link"
-                                    href="https://goo.gl/maps/p9w6qvtk8zfSsdNc8" target="_blank">807 5th Ave, New
-                                    York, NY 10065, USA</a> </p>
-                        </div>
-                        <div class="contact-group">
-                            <span class="contact-group__icon">
-                                <svg class="contact-group__faicon" width="15" height="15">
-                                    <use href="./images/icons.svg#phone"></use>
-                                </svg>
-                            </span>
-                            <p class="contact-group__text"><b>Phone : </b><a class="contact-group__link"
-                                    href="tel:+1233 4556 77">+1233 4556 77</a></p>
-                        </div>
-                        <div class="contact-group">
-                            <span class="contact-group__icon">
-                                <svg class="contact-group__faicon" width="15" height="15">
-                                    <use href="./images/icons.svg#email"></use>
-                                </svg>
-                            </span>
-                            <p class="contact-group__text"><b>Email : </b><a class="contact-group__link"
-                                    href="mailto:info@site.com">info@site.com</a></p>
-                        </div>
-                        <div class="contact-group">
-                            <span class="contact-group__icon">
-                                <svg class="contact-group__faicon" width="15" height="15">
-                                    <use href="./images/icons.svg#earth"></use>
-                                </svg>
-                            </span>
-                            <p class="contact-group__text"><b>Website : </b><a class="contact-group__link"
-                                    href="/index.html" target="_blank">www.web-guitars.com</a></p>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
 
         </section>
 

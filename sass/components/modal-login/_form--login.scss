@@ -1,39 +1,25 @@
-.contact-left__title {
+.form-login__title {
     margin-bottom: 40px;
+    text-align: center;
+
+    @include fonts(500, 34, 36, normal);
 
     @include media(tablet) {
         margin-bottom: 60px;
     }
 }
 
-.contact-left {
-    width: 100%;
+.modal-form--login {
+    width: 350px;
     padding: 30px;
 
-    background: rgb(3, 53, 106);
-    background: linear-gradient(
-        135deg,
-        rgba(10, 23, 36, 0.9) 0%,
-        rgba(3, 53, 106, 0.9) 38%
-    );
-
     color: $bg-color;
-    border-radius: 13px 0 0 13px;
-
-    @include media(tablet) {
-        width: 50%;
-        padding: 40px;
-    }
-
-    @include media(desktop) {
-        padding: 50px;
-    }
 }
 
-.modal-form {
+.form-login {
 }
 
-.modal-form__group {
+.form-login__group {
     position: relative;
     display: block;
     padding-bottom: 10px;
@@ -49,7 +35,7 @@
     }
 }
 
-.modal-form__group .modal-form__label {
+.form-login__group .form-login__label {
     position: absolute;
     top: -5px;
     left: 0;
@@ -57,11 +43,11 @@
     transition: all 400ms ease;
 }
 
-.modal-form__label {
+.form-login__label {
     @include fonts(500, 16, 21, normal);
 }
 
-.modal-form__input {
+.form-login__input {
     margin-bottom: 40px;
     width: 100%;
     padding: 3px;
@@ -82,44 +68,17 @@
     }
 }
 
-.modal-form__input:focus + .modal-form__label,
-.modal-form__input:not(:placeholder-shown) + .modal-form__label {
+.form-login__input:focus + .form-login__label,
+.form-login__input:not(:placeholder-shown) + .form-login__label {
     transform: translateY(-25px);
 }
 
-.modal-form__textarea {
-    margin-bottom: 20px;
-    min-width: 100%;
-    resize: none;
-    padding: 3px;
-
-    outline: transparent;
-    color: $bg-color-2;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid $bg-color-2;
-
-    &::placeholder {
-        opacity: 0;
-        transition: opacity 300ms ease-in;
-    }
-
-    &:focus::placeholder {
-        opacity: 1;
-    }
-}
-
-.modal-form__textarea:focus + .modal-form__label,
-.modal-form__textarea:not(:placeholder-shown) + .modal-form__label {
-    transform: translateY(-25px);
-}
-
-.modal-form__checkbox {
+.form-login__checkbox {
     display: flex;
     align-items: center;
 }
 
-.modal-form__custom-checkbox {
+.form-login__custom-checkbox {
     width: 20px;
     height: 20px;
     @include centeredFlex();
@@ -130,19 +89,19 @@
     outline-offset: -2px;
 }
 
-.modal-form__custom-checkbox-icon {
+.form-login__custom-checkbox-icon {
     opacity: 0;
     transition: opacity 200ms ease-in;
 }
 
-.modal-form__checkbox:checked
-    + .modal-form__custom-checkbox
-    .modal-form__custom-checkbox-icon {
+.form-login__checkbox:checked
+    + .form-login__custom-checkbox
+    .form-login__custom-checkbox-icon {
     opacity: 1;
     transition: opacity 200ms ease-in;
 }
 
-.modal-form__policy-desc {
+.form-login__policy-desc {
     padding-left: 30px;
     margin-top: -4px;
 
@@ -152,7 +111,7 @@
     }
 }
 
-.modal-form__group:last-child {
+.form-login__group:last-child {
     display: flex;
     align-items: center;
     width: 240px;
