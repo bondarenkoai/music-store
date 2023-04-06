@@ -53,6 +53,34 @@
                     </svg>
                 </li>
             </ul>
+
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-hmenu-button>
+                <svg class="" width="24" height="24" aria-label="mobile menu">
+                    <use class="menu-icon--menu" href="./images/icons.svg#menu"></use>
+                    <use class="menu-icon--cross" href="./images/icons.svg#cross"></use>
+                </svg>
+            </button>
+
+            <div class="menu-container" id="menu-container" data-hmenu>
+                <div class="container">
+                    <ul class="site-nav__menu">
+                        <li class="site-nav__item">
+                            <a href="./guitars.html" class="site-nav__link">Guitars</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link">Accessories</a>
+                        </li>
+                        <li class="site-nav__item"><a href="./storage.html" class="site-nav__link">Storage</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link">Lessons mod-8</a></li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link current">Repairs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
         </nav>
 
 
@@ -65,7 +93,7 @@
 
                     <button class="modal-btn" data-modal-login-close>
                         <svg width="20" height="20">
-                            <use href="./images/icons.svg#close"></use>
+                            <use href="./images/icons.svg#cross"></use>
                         </svg>
                     </button>
 
@@ -92,8 +120,8 @@
                         <button class="button form-login__btn ">Login</button>
 
                         <p class="form-login__text">Don't have an account yet?
-                            <a role="button">
-                                <b data-modal-login-close data-modal-signup-open>Sign up</b>
+                            <a role="button" class="form-login__text--link">
+                                <b data-modal-signup-open data-modal-login-close>Sign up</b>
                             </a>
                         </p>
                         <p class="form-login__desc"> or </p>
@@ -113,7 +141,7 @@
 
                     <button class="modal-btn" data-modal-signup-close>
                         <svg width="20" height="20">
-                            <use href="./images/icons.svg#close"></use>
+                            <use href="./images/icons.svg#cross"></use>
                         </svg>
                     </button>
 
@@ -166,14 +194,11 @@
             </h1>
             <!-- Lesson call out -->
             <article class="hero__article">
-                <!-- <img src="./images/article-lesson.png" alt="" width="1264" height="280" /> -->
                 <h2 class="hero__subtitle">FREE GUITAR LESSONS!</h2>
                 <p class="hero__content">
                     Purchase any guitar over $499.99 and recieve a
                     one-hour guitar lesson free.
                 </p>
-                <!-- <a href="https://www.google.com" class="hero__btn button" target="_blank" data-modal-open>LEARN
-                        MORE</a> -->
                 <button class="button hero__btn" type="hero__btn" data-modal-open>LEARN
                     MORE</button>
 
@@ -184,7 +209,7 @@
                     <div class="modal-wrapper">
                         <button class="modal-btn" data-modal-close>
                             <svg width="20" height="20">
-                                <use href="./images/icons.svg#close"></use>
+                                <use href="./images/icons.svg#cross"></use>
                             </svg>
                         </button>
 
@@ -221,13 +246,9 @@
                                     <span class="modal-form__policy-desc modal-form__label">I agree to the processing of
                                         personal data</span>
                                 </label>
-
-
                             </form>
 
-
                             <button class="button">Send</button>
-
                         </div>
 
                         <div class="contact-right">
@@ -271,10 +292,8 @@
                                         href="/index.html" target="_blank">www.web-guitars.com</a></p>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
         </section>
 
 
@@ -289,7 +308,6 @@
                             <img class="card-set__pic" src="./images/guitar-1.png" alt="brand name" width="314"
                                 height="260" />
                         </div>
-
                         <h3 class="card-set__title">
                             Brand Name <span>$2,995</span>
                         </h3>
@@ -422,7 +440,6 @@
                     </div>
                 </li>
 
-                <li></li>
                 <li class="gear-set__item gear-set__item--mode-light gsi__nomargin" data-aos="flip-left"
                     data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <a class="gear-set__link" href=""><img class="gear-set__img" src="./images/gear-2.jpg"
@@ -433,7 +450,6 @@
                             Article Subhead
                         </p>
                     </div>
-
                 </li>
                 <li class="gear-set__item gear-set__item--none" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
@@ -443,7 +459,6 @@
                         <h3 class="gear-set__title">Article Title</h3>
                         <p class="gear-set__subtitle">Article Subhead</p>
                     </div>
-
                 </li>
                 <li class="gear-set__item gear-set__item--mode-light">
                     <a class="gear-set__link" href=""><img class="gear-set__img" src="./images/gear-4.jpg"
@@ -454,7 +469,6 @@
                             Article Subhead
                         </p>
                     </div>
-
                 </li>
                 <li class="gear-set__item" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
@@ -464,7 +478,6 @@
                         <h3 class="gear-set__title">Article Title</h3>
                         <p class="gear-set__subtitle">Article Subhead</p>
                     </div>
-
                 </li>
             </ul>
         </section>
@@ -536,6 +549,7 @@
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/aos.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 

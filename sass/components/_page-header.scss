@@ -50,11 +50,15 @@
 }
 
 .page-header {
+    position: relative;
     // background-color: $color-25;
     padding-top: 56px;
 }
 
 .nav {
+    display: flex;
+    justify-content: space-between;
+
     @include media(desktop) {
         display: flex;
         align-items: center;
@@ -132,6 +136,7 @@
     padding: 8px;
 
     color: $bg-color;
+    cursor: pointer;
 
     &:hover,
     :focus {

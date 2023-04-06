@@ -10,18 +10,15 @@
 .logo__img {
     color: $bg-color;
     transition: transform 250ms $cubic;
+    cursor: pointer;
 
     &:hover,
     &:focus {
         transform: scale(1.02);
     }
- 
 
     @include media(mobile-only) {
         width: 153px;
         height: 24px;
     }
-    
-
-
 }
