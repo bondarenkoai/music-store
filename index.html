@@ -54,7 +54,8 @@
                 </li>
             </ul>
 
-            <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-hmenu-button>
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container"
+                data-hmenu-button>
                 <svg class="" width="24" height="24" aria-label="mobile menu">
                     <use class="menu-icon--menu" href="./images/icons.svg#menu"></use>
                     <use class="menu-icon--cross" href="./images/icons.svg#cross"></use>
@@ -63,7 +64,23 @@
 
             <div class="menu-container" id="menu-container" data-hmenu>
                 <div class="container">
-                    <ul class="site-nav__menu">
+
+                    <ul class="site-nav__menu--auth">
+                        <li class="auth-nav__item" data-modal-login-open>
+                            <svg class="auth-nav__icon" width="24" height="24">
+                                <use href="./images/icons.svg#account"></use>
+                            </svg>
+                            <p class="auth-nav__menu-text">Login</p>
+                        </li>
+                        <li class="auth-nav__item">
+                            <svg class="auth-nav__icon" width="24" height="24">
+                                <use href="./images/icons.svg#buy"></use>
+                            </svg>
+                            <p class="auth-nav__menu-text">Basket</p>
+                        </li>
+
+                    </ul>
+                    <ul class="site-nav__menu ">
                         <li class="site-nav__item">
                             <a href="./guitars.html" class="site-nav__link">Guitars</a>
                         </li>
@@ -76,6 +93,7 @@
                             <a href="" class="site-nav__link current">Repairs</a>
                         </li>
                     </ul>
+
                 </div>
             </div>
 

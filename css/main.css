@@ -506,11 +506,11 @@ section {
 }
 
 .page-header {
-  position: relative;
   padding-top: 56px;
 }
 
 .nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,6 +684,11 @@ section {
   background-color: transparent;
   color: #ffffff;
 }
+@media screen and (min-width: 1300px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 .menu-button .menu-icon--cross {
   display: none;
@@ -703,7 +708,6 @@ section {
   top: 100%;
   left: 0;
   width: 100%;
-  height: 1000px;
   padding: 20px;
   background-color: #252525;
   text-align: center;
@@ -713,16 +717,39 @@ section {
   display: block;
 }
 
-.site-nav__menu {
+.site-nav__menu .site-nav__item {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.site-nav__menu--auth .auth-nav__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.auth-nav__menu-text {
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2777777778;
+  letter-spacing: normal;
+  color: #fcfcfc;
+}
+.auth-nav__menu-text:hover, .auth-nav__menu-text:focus {
+  color: #ab0433;
 }
 
 .backdrop__login {

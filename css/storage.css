@@ -420,11 +420,11 @@ summary {
 }
 
 .page-header {
-  position: relative;
   padding-top: 56px;
 }
 
 .nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

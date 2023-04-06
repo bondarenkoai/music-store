@@ -50,12 +50,13 @@
 }
 
 .page-header {
-    position: relative;
+    
     // background-color: $color-25;
     padding-top: 56px;
 }
 
 .nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
 
