@@ -9,14 +9,21 @@
 }
 
 .brands__list {
-    @include centeredFlex;
+    @include media(tablet) {
+        @include centeredFlex;
 
-    margin-bottom: 56px;
+        margin-bottom: 36px;
+    }
 }
 
 .brands__item {
-    &:not(:last-child) {
-        margin-right: 25px;
+    margin: 15px auto;
+
+    @include media(tablet) {
+        margin: 0;
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
     }
 }
 

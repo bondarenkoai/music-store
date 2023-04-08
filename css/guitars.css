@@ -674,6 +674,84 @@ section {
   }
 }
 
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+@media screen and (min-width: 1300px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .menu-icon--cross {
+  display: none;
+}
+
+.menu-button.is-open .menu-icon--cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-icon--menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #252525;
+  text-align: center;
+  z-index: 5;
+}
+.menu-container.is-open {
+  display: block;
+}
+
+.site-nav__menu .site-nav__item {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.site-nav__menu--auth .auth-nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.auth-nav__menu-text {
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2777777778;
+  letter-spacing: normal;
+  color: #fcfcfc;
+}
+.auth-nav__menu-text:hover, .auth-nav__menu-text:focus {
+  color: #ab0433;
+}
+
 .backdrop__login {
   position: fixed;
   top: 0;
@@ -1700,13 +1778,36 @@ section {
 }
 
 .guitars-header {
-  padding-top: 36px;
-  padding-bottom: 36px;
-  width: 1600px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 375px;
+  height: 140px;
   margin: 0 auto;
-  background: #252525;
-  background-image: url(https://bondarenkoai.github.io/music-store/images/guitars.html/nav-img.jpg);
+  background: rgba(2, 6, 11, 0.7);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/guitars.html/nav-img.jpg);
+  background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/guitars.html/nav-img.jpg);
   background-size: cover;
+  background-position: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -10;
+}
+@media screen and (min-width: 768px) {
+  .guitars-header {
+    width: 1200px;
+    height: 140px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/guitars.html/nav-img.jpg);
+    background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/guitars.html/nav-img.jpg);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .guitars-header {
+    width: 1600px;
+    height: 140px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/guitars.html/nav-img.jpg);
+    background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/guitars.html/nav-img.jpg);
+  }
 }
 
 /* Позиціювання */
@@ -1718,21 +1819,31 @@ section {
   padding-top: 56px;
 }
 
-.brands__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 56px;
+@media screen and (min-width: 768px) {
+  .brands__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 36px;
+  }
 }
 
-.brands__item:not(:last-child) {
-  margin-right: 25px;
+.brands__item {
+  margin: 15px auto;
+}
+@media screen and (min-width: 768px) {
+  .brands__item {
+    margin: 0;
+  }
+  .brands__item:not(:last-child) {
+    margin-right: 25px;
+  }
 }
 
 .brands__btn:hover, .brands__btn:focus, .brands__btn:active {
@@ -1809,17 +1920,47 @@ section {
 }
 
 .help {
-  width: 1200px;
-  padding: 52px 110px;
-  margin-bottom: 88px;
   background-color: #ececec;
+  margin: 0 auto;
+  margin-bottom: 52px;
+  padding-bottom: 88px;
+}
+@media screen and (min-width: 768px) {
+  .help {
+    padding: 52px 30px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .help {
+    width: 1200px;
+    padding: 52px 110px;
+    margin-bottom: 88px;
+  }
 }
 
 .help-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0 auto;
+  width: 328px;
+  text-align: center;
   margin-bottom: 36px;
+}
+@media screen and (min-width: 768px) {
+  .help-wrap {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .help-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    margin-bottom: 36px;
+  }
 }
 
 .help__title {
@@ -1852,7 +1993,30 @@ section {
 }
 
 .help-answers {
+  display: none;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .help-answers {
+    display: block;
+    width: 340px;
+    margin: auto;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .help-answers {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-left: 160px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1299.98px) {
+  .help-answers__item:last-child {
+    display: none;
+  }
 }
 
 .help-answers__link {
@@ -1869,6 +2033,7 @@ section {
   width: 35px;
   height: 35px;
   margin-right: 15px;
+  background-repeat: no-repeat;
   background-image: url("../../images/guitars.html/help-1.svg");
   background-size: contain;
 }
@@ -1895,11 +2060,16 @@ section {
 
 .help-form__wrap {
   position: relative;
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   background-color: #ffffff;
   border: 2px solid #767676;
   border-radius: 18px;
+}
+@media screen and (min-width: 768px) {
+  .help-form__wrap {
+    width: 600px;
+  }
 }
 
 .help-form {
@@ -1941,4 +2111,13 @@ section {
 
 .help-form__btn {
   margin-right: 2px;
+}
+@media screen and (max-width: 767.98px) {
+  .help-form__btn {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=guitars.css.map */
