@@ -711,7 +711,7 @@ section {
   padding: 20px;
   background-color: #252525;
   text-align: center;
-  z-index: 50;
+  z-index: 5;
 }
 .menu-container.is-open {
   display: block;

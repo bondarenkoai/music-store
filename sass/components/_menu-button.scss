@@ -11,6 +11,8 @@
     }
 }
 
+
+
 .menu-button .menu-icon--cross {
     display: none;
 }
@@ -35,7 +37,7 @@
     padding: 20px;
     background-color: $color-25;
     text-align: center;
-    z-index: 50;
+    z-index: 5;
 
     &.is-open {
         display: block;
@@ -43,9 +45,6 @@
 }
 
 .site-nav__menu {
-
-
-
     // display: flex;
     // flex-direction: column;
     // text-align: center;
@@ -62,11 +61,10 @@
     justify-content: center;
     align-items: center;
     width: max-content;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .auth-nav__menu-text {
-   
     // padding-top: 16px;
     // padding-bottom: 16px;
     margin-left: 15px;
