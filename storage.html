@@ -19,40 +19,178 @@
 <body>
     <!-- Header /// +"_page-header.scss"+"_guitars-header.scss"  -->
 
+    <div class="guitars-header"></div>
+    <header class="page-header ">
 
-    <header class="page-header guitars-header">
-
-        <nav class="nav container">
+        <nav class="nav container ">
             <a href="./index.html" class="logo">
                 <img src="./images/logo.svg" alt="logo" class="logo__img" />
             </a>
             <ul class="site-nav">
                 <li class="site-nav__item">
-                    <a href="./guitars.html" class="site-nav__link ">Guitars</a>
+                    <a href="./guitars.html" class="site-nav__link">Guitars</a>
                 </li>
                 <li class="site-nav__item">
                     <a href="" class="site-nav__link">Accessories</a>
                 </li>
-                <li class="site-nav__item"><a href="/storage.html" class="site-nav__link current">Storage</a></li>
-                <li class="site-nav__item"><a href="" class="site-nav__link">Lessons</a></li>
+                <li class="site-nav__item"><a href="./storage.html" class="site-nav__link" current>Storage</a></li>
+                <li class="site-nav__item"><a href="" class="site-nav__link">Lessons mod-8</a></li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link ">Repairs</a>
+                    <a href="" class="site-nav__link">Repairs</a>
                 </li>
             </ul>
             <ul class="auth-nav">
-                <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="24"
-                            height="24">
-                            <use href="./images/icons.svg#buy"></use>
-                        </svg>
-                    </a>
+                <li class="auth-nav__item">
+                    <svg class="auth-nav__icon" width="24" height="24">
+                        <use href="./images/icons.svg#buy"></use>
+                    </svg>
                 </li>
-                <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="24"
-                            height="24">
-                            <use href="./images/icons.svg#account"></use>
-                        </svg>
-                    </a></li>
+                <li class="auth-nav__item" data-modal-login-open>
+                    <svg class="auth-nav__icon" width="24" height="24">
+                        <use href="./images/icons.svg#account"></use>
+                    </svg>
+                </li>
             </ul>
+
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container"
+                data-hmenu-button>
+                <svg class="" width="24" height="24" aria-label="mobile menu">
+                    <use class="menu-icon--menu" href="./images/icons.svg#menu"></use>
+                    <use class="menu-icon--cross" href="./images/icons.svg#cross"></use>
+                </svg>
+            </button>
+
+            <div class="menu-container" id="menu-container" data-hmenu>
+                <div class="container">
+
+                    <ul class="site-nav__menu--auth">
+                        <li class="auth-nav__item" data-modal-login-open2>
+                            <svg class="auth-nav__icon" width="24" height="24">
+                                <use href="./images/icons.svg#account"></use>
+                            </svg>
+                            <p class="auth-nav__menu-text">Login</p>
+                        </li>
+                        <li class="auth-nav__item">
+                            <svg class="auth-nav__icon" width="24" height="24">
+                                <use href="./images/icons.svg#buy"></use>
+                            </svg>
+                            <p class="auth-nav__menu-text">Basket</p>
+                        </li>
+
+                    </ul>
+                    <ul class="site-nav__menu ">
+                        <li class="site-nav__item">
+                            <a href="./guitars.html" class="site-nav__link">Guitars</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link">Accessories</a>
+                        </li>
+                        <li class="site-nav__item"><a href="./storage.html" class="site-nav__link">Storage</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link">Lessons mod-8</a></li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link current">Repairs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+        <!-- Backdrop /// +"_backdrop__login.scss"  -->
+
+        <div class="backdrop__login is-hidden" data-modal-login>
+            <div class="modal-wrapper--login">
+                <div class="modal-wrapper--blur"></div>
+                <div class="modal-wrapper--content">
+
+                    <button class="modal-btn" data-modal-login-close>
+                        <svg width="20" height="20">
+                            <use href="./images/icons.svg#cross"></use>
+                        </svg>
+                    </button>
+
+
+                    <div class="modal-form--login">
+                        <div href="./index.html" class="logo form-login__logo">
+                            <img src="./images/logo.svg" alt="logo" class="logo__img" />
+                        </div>
+                        <h2 class="form-login__title">Welcome Back</h2>
+                        <form class="form-login" name="form-login">
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="email" name="user-mail" placeholder="email@..">
+                                <span class="form-login__label">Email Address</span>
+                            </label>
+
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="password" name="user-name"
+                                    placeholder="your password..">
+                                <span class="form-login__label">Password</span>
+                            </label>
+                        </form>
+
+                        <button class="button form-login__btn ">Login</button>
+
+                        <p class="form-login__text">Don't have an account yet?
+                            <a role="button" class="form-login__text--link">
+                                <b data-modal-signup-open data-modal-login-close>Sign up</b>
+                            </a>
+                        </p>
+                        <p class="form-login__desc"> or </p>
+                        <p class="form-login__link">login with <a href="https://www.facebook.com/login.php/"
+                                target="_blank">facebook</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backdrop /// +"_backdrop--signup.scss"  -->
+
+        <div class="backdrop__signup is-hidden" data-modal-signup>
+            <div class="modal-wrapper--signup">
+                <div class="modal-wrapper--blur"></div>
+                <div class="modal-wrapper--content">
+
+                    <button class="modal-btn" data-modal-signup-close>
+                        <svg width="20" height="20">
+                            <use href="./images/icons.svg#cross"></use>
+                        </svg>
+                    </button>
+
+                    <div class="modal-form--login">
+                        <div href="./index.html" class="logo form-login__logo">
+                            <img src="./images/logo.svg" alt="logo" class="logo__img" />
+                        </div>
+                        <h2 class="form-login__title">Sign Up</h2>
+                        <form class="form-login" name="form-login">
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="name" name="user-name" placeholder="your name..">
+                                <span class="form-login__label">Name</span>
+                            </label>
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="email" name="user-mail" placeholder="email@..">
+                                <span class="form-login__label">Email Address</span>
+                            </label>
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="password" name="user-name"
+                                    placeholder="your password..">
+                                <span class="form-login__label">Password</span>
+                            </label>
+                            <label class="form-login__group">
+                                <input class="form-login__input" type="password" name="user-name"
+                                    placeholder="your password..">
+                                <span class="form-login__label">Retype Password</span>
+                            </label>
+                        </form>
+
+                        <button class="button form-login__btn ">Sign Up</button>
+
+                        <p class="form-login__desc"> or </p>
+                        <p class="form-login__link">login with <a href="https://www.facebook.com/login.php/"
+                                target="_blank">facebook</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </header>
 
@@ -61,7 +199,7 @@
 
         <!-- Section socials  ///  +"_storage-menu.scss" -->
 
-        <section class="socials container">
+        <section class="container socials">
             <div class="socials-menu">
                 <button class="button socials-menu__btn">Push open social menu</button>
                 <ul class="socials-menu__list">
@@ -150,7 +288,7 @@
             </ul>
             <div class="foooter-contact">
 
-                <a href="./index.html" class="logo">
+                <a href="./index.html" class="logo footer__logo--none">
                     <img src="./images/logo.svg" alt="logo" class="logo__img" />
                 </a>
                 <ul class="contact-social__list">
@@ -185,9 +323,11 @@
     </button>
 
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal-guitars.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/aos.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
 
 </body>
 

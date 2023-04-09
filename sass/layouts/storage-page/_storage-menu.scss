@@ -2,6 +2,10 @@
     background-color: $text-color;
 }
 
+section.socials {
+    margin-top: 90px;
+}
+
 .socials-menu {
     position: relative;
     background-color: $color-25;
@@ -12,18 +16,17 @@
 .socials-menu__btn {
     position: relative;
     z-index: 10;
-    
 }
 
 .socials-menu__btn:hover ~ .socials-menu__list .socials-menu__item {
-    transform: translateY(calc(var(--item) *40px) ) ;
+    transform: translateY(calc(var(--item) * 40px));
 }
 
 .socials-menu__list {
     position: absolute;
     top: 20px;
     left: 50%;
-    
+
     width: 200px;
 
     transform: translateX(-50%);

@@ -5,17 +5,18 @@
 .radio-buttom__title {
     margin-bottom: 20px;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.2;
+    @include fonts(700, 40, 48, normal);
     text-align: center;
     /* #505050 */
     color: $text-color;
 }
 
 .form-pay__type {
-    @include centeredFlex;
+    display: block;
+
+    @include media(tablet) {
+        @include centeredFlex;
+    }
 }
 
 .form-pay__group {
