@@ -480,9 +480,8 @@ section {
   min-width: 375px;
   height: 507px;
   margin: 0 auto;
-  background: rgba(2, 6, 11, 0.7);
-  background-image: url(/images/hero-bgi-mq-mobile.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
-  background-image: url(/images/hero-bgi-mq-mobile.jpg), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
+  background-image: url(../../images/index.html/header-bgi/header-bgi_sm.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
+  background-image: url(../../images/index.html/header-bgi/header-bgi_sm.jpg), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
   background-size: cover;
   background-position: center;
   -webkit-transform: translateX(-50%);
@@ -491,8 +490,8 @@ section {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header-bgimage {
-    background-image: url(/images/hero-bgi-mq-mobile.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
-    background-image: url(/images/hero-bgi-mq-mobile.jpg), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
+    background-image: url(../../images/index.html/header-bgi/header-bgi_sm@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
+    background-image: url(../../images/index.html/header-bgi/header-bgi_sm@2x.jpg), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -500,8 +499,14 @@ section {
     width: 100%;
     min-width: 1200px;
     height: 770px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0))), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
-    background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+    background-image: url(../../images/index.html/header-bgi/header-bgi_md.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
+    background-image: url(../../images/index.html/header-bgi/header-bgi_md.jpg), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .header-bgimage {
+    background-image: url(../../images/index.html/header-bgi/header-bgi_md@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
+    background-image: url(../../images/index.html/header-bgi/header-bgi_md@2x.jpg), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
   }
 }
 @media screen and (min-width: 1300px) {
@@ -509,14 +514,14 @@ section {
     width: 100%;
     min-width: 1440px;
     height: 808px;
-    background-image: url(../../images/index.html/header-bgi/header-bgi-sm.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
-    background-image: url(../../images/index.html/header-bgi/header-bgi-sm.jpg), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
+    background-image: url(../../images/index.html/header-bgi/header-bgi_lg.webp), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
+    background-image: url(../../images/index.html/header-bgi/header-bgi_lg.webp), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
   }
 }
 @media screen and (min-width: 1300px) and (min-device-pixel-ratio: 2), screen and (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1300px) and (min-resolution: 192dpi), screen and (min-width: 1300px) and (min-resolution: 2dppx) {
   .header-bgimage {
-    background-image: url(../../images/index.html/header-bgi/header-bgi-sm@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
-    background-image: url(../../images/index.html/header-bgi/header-bgi-sm@2x.jpg), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
+    background-image: url(../../images/index.html/header-bgi/header-bgi_lg@2x.webp), -webkit-gradient(linear, left top, left bottom, from(rgba(2, 6, 11, 0.7)), color-stop(32.85%, rgba(2, 6, 11, 0)));
+    background-image: url(../../images/index.html/header-bgi/header-bgi_lg@2x.webp), linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%);
   }
 }
 

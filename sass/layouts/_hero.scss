@@ -45,8 +45,12 @@
     text-align: center;
 
     background: $btn-color;
-    background-image: url(/images/article-lesson-mq-mobile.png);
-
+    background-image: url(../../images/index.html/article-bgi/article-bgi_sm.jpg);
+    
+    @include media(retina) {
+            background-image: url(../../images/index.html/article-bgi/article-bgi_sm@2x.jpg);
+    }
+    
     background-repeat: no-repeat;
     background-size: initial;
     background-position: center;
@@ -62,7 +66,11 @@
         width: 768px;
         height: 208px;
 
-        background-image: url(https://bondarenkoai.github.io/music-store/images/article-lesson.png);
+        background-image: url(../../images/index.html/article-bgi/article-bgi_md.jpg);
+        
+        @include media(retina) {
+            background-image: url(../../images/index.html/article-bgi/article-bgi_md@2x.jpg);
+    }
     }
 
     @include media(desktop) {
@@ -70,7 +78,11 @@
         width: 1264px;
         height: 255px;
 
-        background-image: url(https://bondarenkoai.github.io/music-store/images/article-lesson.png);
+        background-image: url(../../images/index.html/article-bgi/article-bgi_lg.jpg);
+        
+        @include media(retina) {
+            background-image: url(../../images/index.html/article-bgi/article-bgi_lg@2x.jpg);
+    }
     }
 }
 

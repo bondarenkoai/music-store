@@ -11,13 +11,12 @@
     margin: 0 auto;
     // @include centeredFlex;
 
-    background: rgba(2, 6, 11, 0.7);
-    background-image: url(/images/hero-bgi-mq-mobile.jpg),
-    linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%,rgba(2, 6, 11, 0) 32.85%);
+    background-image: url(../../images/index.html/header-bgi/header-bgi_sm.jpg),
+            linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%,rgba(2, 6, 11, 0) 32.85%);
 
-    @include media(retina) {
-    background-image: url(/images/hero-bgi-mq-mobile.jpg),
-    linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%,rgba(2, 6, 11, 0) 32.85%);
+        @include media(retina) {
+            background-image: url(../../images/index.html/header-bgi/header-bgi_sm@2x.jpg),
+            linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%,rgba(2, 6, 11, 0) 32.85%);
 
     }
 
@@ -33,12 +32,14 @@
         min-width: 1200px;
         height: 770px;
 
-        background-image: linear-gradient(
-                180deg,
-                rgba(2, 6, 11, 0.7) 0%,
-                rgba(2, 6, 11, 0) 32.85%
-            ),
-            url(https://bondarenkoai.github.io/music-store/images/hero-bgi.jpg);
+        background-image: url(../../images/index.html/header-bgi/header-bgi_md.jpg),
+            linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%,rgba(2, 6, 11, 0) 32.85%);
+
+        @include media(retina) {
+            background-image: url(../../images/index.html/header-bgi/header-bgi_md@2x.jpg),
+            linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%,rgba(2, 6, 11, 0) 32.85%);
+
+    }
     }
 
     @include media(desktop) {
@@ -47,11 +48,11 @@
 
         height: 808px;
 
-        background-image: url(../../images/index.html/header-bgi/header-bgi-sm.jpg),
+        background-image: url(../../images/index.html/header-bgi/header-bgi_lg.webp),
             linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%,rgba(2, 6, 11, 0) 32.85%);
 
         @include media(retina) {
-            background-image: url(../../images/index.html/header-bgi/header-bgi-sm@2x.jpg),
+            background-image: url(../../images/index.html/header-bgi/header-bgi_lg@2x.webp),
             linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%,rgba(2, 6, 11, 0) 32.85%);
 
     }
